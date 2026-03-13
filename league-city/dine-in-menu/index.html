@@ -22,34 +22,191 @@
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://redriverbbq.com/dine-in-menu.html#breadcrumb",
+                "@id": "https://redriverbbq.com/league-city/dine-in-menu/#breadcrumb",
                 "itemListElement": [
-                    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://redriverbbq.com/"},
-                    {"@type": "ListItem", "position": 2, "name": "Dine-In Menu", "item": "https://redriverbbq.com/dine-in-menu.html"}
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://redriverbbq.com/league-city/"},
+                    {"@type": "ListItem", "position": 2, "name": "Dine-In Menu", "item": "https://redriverbbq.com/league-city/dine-in-menu/"}
                 ]
             },
             {
                 "@type": "Menu",
-                "@id": "https://redriverbbq.com/dine-in-menu.html#menu",
+                "@id": "https://redriverbbq.com/league-city/dine-in-menu/#menu",
                 "name": "Red River BBQ & Grill Dine-In Menu",
                 "description": "Authentic Texas BBQ menu featuring slow-smoked meats, ribs, brisket, pulled pork, chicken, and homestyle sides.",
-                "url": "https://redriverbbq.com/dine-in-menu.html",
-                "image": "https://redriverbbq.com/images/RRBBQBrand.png",
+                "url": "https://redriverbbq.com/league-city/dine-in-menu/",
+                "image": "https://redriverbbq.com/league-city/images/RRBBQBrand.png",
                 "hasMenuSection": [
-                    {"@type": "MenuSection", "name": "Appetizers"},
-                    {"@type": "MenuSection", "name": "Salads & Gumbo"},
-                    {"@type": "MenuSection", "name": "Texas Bar-B-Que"},
-                    {"@type": "MenuSection", "name": "Bar-B-Que Spuds"},
-                    {"@type": "MenuSection", "name": "Burgers & Sandwiches"},
-                    {"@type": "MenuSection", "name": "Steak & Chicken"},
-                    {"@type": "MenuSection", "name": "Fish & Shrimp"},
-                    {"@type": "MenuSection", "name": "Kid's Menu"},
-                    {"@type": "MenuSection", "name": "Desserts"},
-                    {"@type": "MenuSection", "name": "Lunch Specials"},
-                    {"@type": "MenuSection", "name": "Daily Specials"},
-                    {"@type": "MenuSection", "name": "Side Choices"}
+                    {
+                        "@type": "MenuSection",
+                        "name": "Appetizers",
+                        "hasMenuItem": [
+                            {"@type": "MenuItem", "name": "Texas Hushpuppies", "description": "Brisket, bar-b-que sauce & pepper jack cheese, battered & fried", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "12.99"}},
+                            {"@type": "MenuItem", "name": "Brisket Cheese Fries", "description": "Fries, brisket, queso, pico de gallo, jalapenos & sour cream", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "12.99"}},
+                            {"@type": "MenuItem", "name": "Brisket Quesadillas", "description": "Pico de gallo, pickled jalapenos & sour cream", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "13.99"}},
+                            {"@type": "MenuItem", "name": "Texas Queso", "description": "Chile con queso, brisket, pico de gallo & fresh fried tortilla chips", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "12.99"}},
+                            {"@type": "MenuItem", "name": "Smoked Wings", "description": "8 Texas sized wings, smoked & rolled in our famous bar-b-que sauce", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "12.99"}},
+                            {"@type": "MenuItem", "name": "Jalapeno Shrimp Poppers", "description": "4 fried jalapenos stuffed with a Gulf shrimp & pepper jack cheese", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "12.99"}},
+                            {"@type": "MenuItem", "name": "Fried Mushrooms", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "9.99"}},
+                            {"@type": "MenuItem", "name": "Loaded Bottle Caps", "description": "Fried jalapenos, brisket, queso, pico de gallo & sour cream", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "13.99"}},
+                            {"@type": "MenuItem", "name": "Brisket Nachos", "description": "Tortilla chips, queso, pico, beans, brisket, sour cream & bar-b-que sauce", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "13.99"}},
+                            {"@type": "MenuItem", "name": "Fried Pickles", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "9.99"}}
+                        ]
+                    },
+                    {
+                        "@type": "MenuSection",
+                        "name": "Bar-B-Que Spuds",
+                        "hasMenuItem": [
+                            {"@type": "MenuItem", "name": "Bar-B-Que Spud", "description": "Turkey breast, smoked chicken, pulled pork, sausage or spicy sausage", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "12.99"}},
+                            {"@type": "MenuItem", "name": "Two Meat Combo Spud", "description": "Brisket, turkey breast, smoked chicken, pulled pork, sausage or spicy sausage", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "15.79"}},
+                            {"@type": "MenuItem", "name": "Brisket Spud", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "14.99"}},
+                            {"@type": "MenuItem", "name": "Grilled Chicken Spud", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "14.99"}}
+                        ]
+                    },
+                    {
+                        "@type": "MenuSection",
+                        "name": "Bar-B-Que Sandwiches",
+                        "hasMenuItem": [
+                            {"@type": "MenuItem", "name": "Bar-B-Que Sandwich", "description": "Turkey breast, pulled pork, sausage, spicy sausage, jalapeno cheese sausage or bar-b-que chicken", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "13.99"}},
+                            {"@type": "MenuItem", "name": "Triple Threat", "description": "Pulled pork, spicy sausage, peppered bacon & cheddar cheese on a jalapeno cheese bun", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "15.99"}},
+                            {"@type": "MenuItem", "name": "Brisket Sandwich", "description": "Sliced or chopped", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "14.99"}},
+                            {"@type": "MenuItem", "name": "The Memphis", "description": "Pulled pork, sourdough bun & cole slaw", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "13.99"}},
+                            {"@type": "MenuItem", "name": "Brisket Melt", "description": "Moist cut brisket, jalapeno cheese bun, cheddar cheese & grilled onions", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "15.99"}},
+                            {"@type": "MenuItem", "name": "Turkey Swiss", "description": "Smoked turkey breast, jalapeno cheese bun, Swiss cheese & peppered bacon", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "14.99"}}
+                        ]
+                    },
+                    {
+                        "@type": "MenuSection",
+                        "name": "Salads & Gumbo",
+                        "hasMenuItem": [
+                            {"@type": "MenuItem", "name": "Salad Bar", "description": "All you can eat", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "10.99"}},
+                            {"@type": "MenuItem", "name": "Side Salad", "description": "With entree", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "5.99"}},
+                            {"@type": "MenuItem", "name": "Brisket Taco Salad", "description": "Refried beans, shredded lettuce, grated cheddar, chopped brisket, bar-b-que sauce & sour cream", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "15.99"}},
+                            {"@type": "MenuItem", "name": "Chicken & Sausage Gumbo", "description": "White rice & garlic bread", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "12.99"}},
+                            {"@type": "MenuItem", "name": "Gumbo & Salad Bar", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "16.99"}}
+                        ]
+                    },
+                    {
+                        "@type": "MenuSection",
+                        "name": "Texas Bar-B-Que",
+                        "description": "Includes your choice of 2 sides & a freshly baked yeast roll",
+                        "hasMenuItem": [
+                            {"@type": "MenuItem", "name": "Pulled Pork", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "17.99"}},
+                            {"@type": "MenuItem", "name": "Brisket", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "18.99"}},
+                            {"@type": "MenuItem", "name": "Turkey Breast", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "17.99"}},
+                            {"@type": "MenuItem", "name": "Pork Ribs (8)", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "18.99"}},
+                            {"@type": "MenuItem", "name": "1/2 Chicken", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "17.99"}},
+                            {"@type": "MenuItem", "name": "Smoked Wings & Ribs", "description": "4 smoked wings & 3 pork ribs", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "16.99"}},
+                            {"@type": "MenuItem", "name": "Sausage", "description": "Regular or spicy", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "16.99"}},
+                            {"@type": "MenuItem", "name": "Jalapeno Cheese Sausage", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "17.25"}},
+                            {"@type": "MenuItem", "name": "Two Meat Combo", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "18.99"}},
+                            {"@type": "MenuItem", "name": "Three Meat Combo", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "20.99"}}
+                        ]
+                    },
+                    {
+                        "@type": "MenuSection",
+                        "name": "Burgers & Sandwiches",
+                        "description": "Fresh beef, ground in-house daily 1/2 lb burgers. Includes French fries.",
+                        "hasMenuItem": [
+                            {"@type": "MenuItem", "name": "Angus Burger", "description": "1855 Black Angus Beef", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "13.99"}},
+                            {"@type": "MenuItem", "name": "Bacon Cheeseburger", "description": "Thick cut peppered bacon & cheese", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "15.99"}},
+                            {"@type": "MenuItem", "name": "Mushroom Swiss Burger", "description": "Sauteed mushrooms & Swiss cheese", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "14.99"}},
+                            {"@type": "MenuItem", "name": "Durango Burger", "description": "Pepper jack cheese, grilled onions, mushrooms & jalapenos", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "14.99"}},
+                            {"@type": "MenuItem", "name": "Smokehouse Burger", "description": "Cheddar cheese, grilled onions, peppered bacon & our famous bar-b-que sauce", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "15.99"}},
+                            {"@type": "MenuItem", "name": "Southwest Grilled Chicken Sandwich", "description": "Jalapeno cheese sourdough bun, pepper jack cheese & grilled onions", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "14.99"}},
+                            {"@type": "MenuItem", "name": "Grilled Chicken Sandwich", "description": "Topped with grilled onions", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "13.99"}},
+                            {"@type": "MenuItem", "name": "Spicy Chicken Sandwich", "description": "Crispy chicken breast, Buffalo sauce, Swiss cheese, shredded lettuce, pickles & mayo", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "14.99"}},
+                            {"@type": "MenuItem", "name": "Jumbo Shrimp Po-Boy", "description": "5 hand battered Gulf shrimp, garlic toasted po-boy bun", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "15.99"}}
+                        ]
+                    },
+                    {
+                        "@type": "MenuSection",
+                        "name": "Steak & Chicken",
+                        "description": "Your choice of 2 sides & salad bar",
+                        "hasMenuItem": [
+                            {"@type": "MenuItem", "name": "Chicken Fried Steak", "description": "Hand battered cutlet, golden fried & served with homemade cream gravy", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "20.99"}},
+                            {"@type": "MenuItem", "name": "Grilled Chicken Breast", "description": "Marinated chicken breast char-grilled & topped with sauteed onions", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "17.99"}},
+                            {"@type": "MenuItem", "name": "1855 Black Angus Ribeye 12oz", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "26.99"}},
+                            {"@type": "MenuItem", "name": "1855 Black Angus Ribeye 16oz", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "31.99"}},
+                            {"@type": "MenuItem", "name": "Pepper Jack Chicken", "description": "Grilled chicken breast, pepper jack cheese, sauteed mushrooms, onions & jalapenos", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "18.99"}},
+                            {"@type": "MenuItem", "name": "Chicken Fried Pork Chop", "description": "Hand battered boneless pork chop with homemade cream gravy", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "19.99"}},
+                            {"@type": "MenuItem", "name": "Chicken Fried Chicken", "description": "Fresh hand battered chicken breast & homemade cream gravy", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "17.99"}},
+                            {"@type": "MenuItem", "name": "Crispy Chicken Tenders", "description": "Fresh hand battered tenders with two sides. Original Crispy, Buffalo or Garlic Parmesan", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "15.99"}}
+                        ]
+                    },
+                    {
+                        "@type": "MenuSection",
+                        "name": "Fish & Shrimp",
+                        "description": "Your choice of two sides",
+                        "hasMenuItem": [
+                            {"@type": "MenuItem", "name": "Jumbo Gulf Fried Shrimp (6pc)", "description": "Jumbo Gulf shrimp, hand battered & fried to a golden brown. Includes homemade hushpuppies", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "17.99"}},
+                            {"@type": "MenuItem", "name": "Jumbo Gulf Fried Shrimp (8pc)", "description": "Jumbo Gulf shrimp, hand battered & fried to a golden brown. Includes homemade hushpuppies", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "20.99"}},
+                            {"@type": "MenuItem", "name": "Mississippi Fried Catfish", "description": "Two fresh fillets fried to a golden brown. Includes hushpuppies", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "19.99"}},
+                            {"@type": "MenuItem", "name": "Grilled Shrimp Skewer", "description": "8 fresh jumbo shrimp served over a bed of wild rice with your choice of 2 sides & a homemade yeast roll", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "20.99"}},
+                            {"@type": "MenuItem", "name": "Shrimp & Catfish Combo", "description": "Four jumbo Gulf fried shrimp and a hand battered catfish fillet. Includes homemade hushpuppies", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "20.99"}},
+                            {"@type": "MenuItem", "name": "Fried Shrimp & Chicken Tenders", "description": "3 hand battered tenders & 4 jumbo Gulf fried shrimp", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "19.99"}},
+                            {"@type": "MenuItem", "name": "Blackened Redfish", "description": "Texas redfish fillet, blackened", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "20.99"}},
+                            {"@type": "MenuItem", "name": "Blackened Redfish & Shrimp", "description": "Blackened Texas redfish & 4 jumbo Gulf grilled shrimp over wild rice", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "26.99"}}
+                        ]
+                    },
+                    {
+                        "@type": "MenuSection",
+                        "name": "Kid's Menu",
+                        "description": "12 & under. Kid drink is included.",
+                        "hasMenuItem": [
+                            {"@type": "MenuItem", "name": "Mac & Cheese", "description": "With fries", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "7.99"}},
+                            {"@type": "MenuItem", "name": "Bar-B-Que Plate", "description": "With 2 sides", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "8.99"}},
+                            {"@type": "MenuItem", "name": "Hamburger", "description": "With fries", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "7.99"}},
+                            {"@type": "MenuItem", "name": "Grilled Cheese", "description": "With fries", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "7.99"}},
+                            {"@type": "MenuItem", "name": "Chicken Nuggets", "description": "With fries", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "7.99"}},
+                            {"@type": "MenuItem", "name": "Corn Dog", "description": "With fries", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "7.99"}},
+                            {"@type": "MenuItem", "name": "Bar-B-Que Sandwich", "description": "With fries", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "7.99"}}
+                        ]
+                    },
+                    {
+                        "@type": "MenuSection",
+                        "name": "Desserts",
+                        "description": "Made In-House Daily!",
+                        "hasMenuItem": [
+                            {"@type": "MenuItem", "name": "Peach Cobbler", "description": "With ice cream", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "5.99"}},
+                            {"@type": "MenuItem", "name": "Banana Pudding", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "5.99"}},
+                            {"@type": "MenuItem", "name": "Cherry Cobbler", "description": "With ice cream", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "5.99"}},
+                            {"@type": "MenuItem", "name": "Homemade Brownies", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "2.75"}},
+                            {"@type": "MenuItem", "name": "Pecan Cobbler", "description": "With ice cream", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "6.99"}},
+                            {"@type": "MenuItem", "name": "Cookie Brownie Bar", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "2.99"}},
+                            {"@type": "MenuItem", "name": "Chocolate Chip Cookie", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "1.75"}}
+                        ]
+                    },
+                    {
+                        "@type": "MenuSection",
+                        "name": "Lunch Specials",
+                        "description": "Monday - Friday 11:00am - 3:00pm",
+                        "hasMenuItem": [
+                            {"@type": "MenuItem", "name": "1/2 LB Angus Burger", "description": "With fries", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "12.99"}},
+                            {"@type": "MenuItem", "name": "Chopped Brisket Sandwich", "description": "With fries", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "12.99"}},
+                            {"@type": "MenuItem", "name": "Chicken Tenders (4pc)", "description": "With fries", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "12.99"}},
+                            {"@type": "MenuItem", "name": "Jumbo Fried Shrimp (6pc)", "description": "With fries & slaw", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "14.99"}},
+                            {"@type": "MenuItem", "name": "Chicken Fried Steak Lunch", "description": "With two sides & a dinner roll", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "15.99"}},
+                            {"@type": "MenuItem", "name": "Sausage & Chicken Combo", "description": "Combo plate with two sides", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "15.99"}},
+                            {"@type": "MenuItem", "name": "Chopped Brisket Spud", "description": "With butter, cheese & sour cream", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "12.99"}},
+                            {"@type": "MenuItem", "name": "Salad Bar & Smoked Turkey Breast", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "13.99"}}
+                        ]
+                    },
+                    {
+                        "@type": "MenuSection",
+                        "name": "Daily Specials",
+                        "hasMenuItem": [
+                            {"@type": "MenuItem", "name": "Monday - Chicken Fried Steak", "description": "With two sides & salad bar", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "17.99"}},
+                            {"@type": "MenuItem", "name": "Tuesday - All You Can Eat Ribs", "description": "With two sides", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "22.99"}},
+                            {"@type": "MenuItem", "name": "Wednesday - Dozen Fried Shrimp", "description": "Jumbo fried shrimp & two sides", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "21.99"}},
+                            {"@type": "MenuItem", "name": "Thursday - Baby Back Ribs", "description": "1/2 rack & your choice of 2 sides", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "18.99"}},
+                            {"@type": "MenuItem", "name": "Friday - Ribeye Special 10oz", "description": "With two sides, salad bar & dinner roll", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "19.99"}},
+                            {"@type": "MenuItem", "name": "Friday - Ribeye Special 16oz", "description": "With two sides, salad bar & dinner roll", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "26.99"}},
+                            {"@type": "MenuItem", "name": "Saturday - All You Can Eat Ribs", "description": "With two sides", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "22.99"}},
+                            {"@type": "MenuItem", "name": "Sunday - Chicken Fried Pork Chop", "description": "Boneless pork chop, two sides & salad bar", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "17.99"}}
+                        ]
+                    }
                 ],
-                "provider": {"@type": "Restaurant", "@id": "https://redriverbbq.com/#restaurant"},
+                "provider": {"@type": "Restaurant", "@id": "https://redriverbbq.com/league-city/#restaurant"},
                 "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "3645"}
             }
         ]
