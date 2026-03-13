@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red River BBQ - Choose Your Location | Authentic Texas Bar-B-Que Since 2002</title>
+    <meta name="description" content="Red River BBQ serves authentic Texas BBQ in League City and Katy, TX. Choose your location for dining, takeout, and catering services.">
+    <link rel="canonical" href="https://redriverbbq.com/">
+    
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Red River BBQ",
+        "url": "https://redriverbbq.com/",
+        "description": "Red River BBQ serves authentic Texas bar-b-que since 2002. Family-friendly dining with smoked meats, homestyle sides, and full catering services.",
+        "foundingDate": "2002",
+        "foundingLocation": {"@type": "Place", "name": "League City, TX"}
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3, h4, .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+        .chalkboard-texture {
+            background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+            background-color: #555555;
+        }
+        .diagonal-stripes {
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.05) 10px, rgba(255,255,255,0.05) 20px);
+            background-color: #666666;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .animate-fadeInDown {
+            animation: fadeInDown 0.8s ease-out forwards;
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(204, 0, 0, 0.2);
+        }
+        
+        .btn-modern {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #cc0000 0%, #880000 100%);
+        }
+        .btn-modern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s ease;
+        }
+        .btn-modern:hover::before {
+            left: 100%;
+        }
+        .btn-modern:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(204, 0, 0, 0.4);
+        }
+        
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .gradient-border {
+            position: relative;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 2px;
+            background: linear-gradient(135deg, #cc0000, #eab308, #cc0000);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+
+        .btn-outline-modern {
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #fff;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-outline-modern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #fff;
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+        }
+        .btn-outline-modern:hover::before {
+            width: 100%;
+        }
+        .btn-outline-modern:hover {
+            color: #1a1a1a;
+            transform: scale(1.05);
+        }
+
+        .location-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+            border: 2px solid rgba(204, 0, 0, 0.2);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .location-card:hover {
+            border-color: rgba(204, 0, 0, 0.6);
+            box-shadow: 0 8px 40px rgba(204, 0, 0, 0.2);
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 50%, #f5f5f5 100%);
+            position: relative;
+        }
+        
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+            opacity: 0.05;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="w-full sticky top-0 z-50">
+        <!-- Main Branding Bar -->
+        <div class="chalkboard-texture py-6 px-4 shadow-2xl relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-red-900/10 to-transparent opacity-50"></div>
+            
+            <div class="max-w-7xl mx-auto flex justify-center items-center relative z-10">
+                <!-- Logo Section -->
+                <div class="flex items-center gap-8 md:gap-16 animate-fadeInDown">
+                    <a href="../league-city/index.html" class="group cursor-pointer">
+                        <img 
+                            src="../league-city/images/RRBBQBrand.png" 
+                            alt="Red River BBQ & Grill" 
+                            class="h-16 md:h-28 w-auto transition-transform duration-300 group-hover:scale-105 drop-shadow-lg"
+                        />
+                    </a>
+                    <a href="../katy/index.html" class="group cursor-pointer">
+                        <img 
+                            src="../katy/images/BBQ BURGER UPSCALE trans.png" 
+                            alt="Red River BBQ & Burger" 
+                            class="h-16 md:h-28 w-auto transition-transform duration-300 group-hover:scale-105 drop-shadow-lg"
+                        />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Location Cards -->
+    <section class="hero-bg min-h-screen py-20 px-4 relative">
+        <div class="max-w-6xl mx-auto relative z-10">
+            
+            <!-- Hero Title -->
+            <div class="text-center mb-16 reveal">
+                <h1 class="font-oswald text-4xl md:text-6xl font-bold text-gray-800 mb-4 uppercase tracking-wider">
+                    Choose Your Location
+                </h1>
+                <p class="text-gray-600 text-lg md:text-xl">
+                    Authentic Texas Bar-B-Que Since 2002
+                </p>
+            </div>
+
+            <!-- Location Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
+                
+                <!-- League City Card -->
+                <div class="reveal delay-100">
+                    <a href="../league-city/index.html" class="block location-card card-hover rounded-2xl overflow-hidden">
+                        <div class="p-8 md:p-10 text-center">
+                            <!-- Logo -->
+                            <div class="flex justify-center mb-6">
+                                <img 
+                                    src="../league-city/images/RRBBQBrand.png" 
+                                    alt="Red River BBQ & Grill" 
+                                    class="h-32 md:h-40 w-auto drop-shadow-lg"
+                                />
+                            </div>
+                            
+                            <!-- Title -->
+                            <h2 class="font-oswald text-3xl md:text-4xl font-bold text-gray-800 mb-4 uppercase">
+                                Red River BBQ & Grill
+                            </h2>
+                            
+                            <!-- Address -->
+                            <div class="mb-4">
+                                <p class="text-gray-600">1911 E. Main St., Suite B</p>
+                                <p class="text-gray-600">League City, TX 77573</p>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <p class="text-xl font-bold text-red-600 mb-4">281.332.8086</p>
+                            
+                            <!-- Hours -->
+                            <div class="text-sm text-gray-600 border-t border-gray-200 pt-4 mt-4">
+                                <p><span class="font-bold">Sun – Thu:</span> 11am – 9pm</p>
+                                <p><span class="font-bold">Fri & Sat:</span> 11am – 9:30pm</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Katy Card -->
+                <div class="reveal delay-200">
+                    <a href="../katy/index.html" class="block location-card card-hover rounded-2xl overflow-hidden">
+                        <div class="p-8 md:p-10 text-center">
+                            <!-- Logo -->
+                            <div class="flex justify-center mb-6">
+                                <img 
+                                    src="../katy/images/BBQ BURGER UPSCALE trans.png" 
+                                    alt="Red River BBQ & Burger" 
+                                    class="h-32 md:h-40 w-auto drop-shadow-lg"
+                                />
+                            </div>
+                            
+                            <!-- Title -->
+                            <h2 class="font-oswald text-3xl md:text-4xl font-bold text-gray-800 mb-4 uppercase">
+                                Red River BBQ & Burger
+                            </h2>
+                            
+                            <!-- Address -->
+                            <div class="mb-4">
+                                <p class="text-gray-600">1711 S Mason Rd</p>
+                                <p class="text-gray-600">Katy, TX 77450</p>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <p class="text-xl font-bold text-red-600 mb-4">281.578.3800</p>
+                            
+                            <!-- Hours -->
+                            <div class="text-sm text-gray-600 border-t border-gray-200 pt-4 mt-4">
+                                <p><span class="font-bold">Sun – Thu:</span> 11am – 9pm</p>
+                                <p><span class="font-bold">Fri & Sat:</span> 11am – 9:30pm</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Additional Info Section -->
+            <div class="mt-20 text-center reveal delay-300">
+                <div class="bg-white rounded-2xl p-8 max-w-3xl mx-auto shadow-lg">
+                    <h3 class="font-oswald text-2xl md:text-3xl font-bold text-gray-800 mb-4 uppercase">
+                        Authentic Texas BBQ
+                    </h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Experience the best in Texas-style barbecue with our slow-smoked brisket, 
+                        ribs, pulled pork, and homestyle sides. Family-friendly dining, catering, 
+                        and takeout available at both locations.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="diagonal-stripes py-20 px-4 text-gray-300 relative overflow-hidden">
+        
+        <!-- Bottom Logos Section -->
+        <div class="reveal flex justify-center items-center">
+            <div class="flex flex-wrap md:flex-nowrap justify-center md:justify-between items-end gap-8 md:gap-12 w-full max-w-6xl">
+                <!-- Red River BBQ League City -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <a href="../league-city/index.html" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(220,38,38,0.5)]">
+                        <img src="../league-city/images/RRBBQBrand.png" alt="Red River BBQ & Grill - League City" class="h-24 md:h-28 w-auto" />
+                    </a>
+                    <p class="text-xs text-white mt-2 uppercase tracking-wide font-bold">League City TX</p>
+                </div>
+
+                <!-- Brand League City TX -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(0,167,157,0.6)]">
+                        <img src="../league-city/images/brand.png" alt="Location - League City TX" class="h-24 md:h-28 w-auto" />
+                    </div>
+                    <p class="text-xs text-white mt-2 uppercase tracking-wide font-bold">League City TX</p>
+                </div>
+
+                <!-- Brand Richmond TX -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <a href="#" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(0,167,157,0.6)]">
+                        <img src="../league-city/images/brand.png" alt="Location - Richmond TX" class="h-24 md:h-28 w-auto" />
+                    </a>
+                    <p class="text-xs text-white mt-2 uppercase tracking-wide font-bold">Richmond TX</p>
+                </div>
+
+                <!-- BBQ Burger Upscale Katy TX -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <a href="../katy/index.html" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(220,38,38,0.5)]">
+                        <img src="../katy/images/BBQ BURGER UPSCALE trans.png" alt="BBQ Burger Upscale - Katy TX" class="h-24 md:h-28 w-auto" />
+                    </a>
+                    <p class="text-xs text-white mt-2 uppercase tracking-wide font-bold">Katy TX</p>
+                </div>
+
+                <!-- Kiersh Co -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <a href="https://kiershcateringevents.com/" target="_blank" rel="noopener noreferrer" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(255,255,255,0.6)]">
+                        <img src="../katy/images/kiersh co white trans.png" alt="Kiersh Catering" class="h-24 md:h-28 w-auto opacity-100 brightness-125" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-12 text-center text-xs text-white uppercase tracking-widest">
+            &copy; 2026 Red River BBQ. All Rights Reserved.
+            <p class="mt-2 text-gray-300 normal-case tracking-normal">Made with <span class="text-red-500">♥</span> in Texas | <a href="https://rivastrategies.com" target="_blank" rel="noopener noreferrer" class="hover:underline">Riva Strategies</a></p>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+
+        // ===== Scroll Reveal Animation =====
+        const revealOnScroll = () => {
+            const revealElements = document.querySelectorAll('.reveal');
+            const windowHeight = window.innerHeight;
+            const revealPoint = 100;
+            
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                
+                if (elementTop < windowHeight - revealPoint) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(revealOnScroll, 100);
+        });
+    </script>
+
+</body>
+</html>
+

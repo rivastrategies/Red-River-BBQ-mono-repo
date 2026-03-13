@@ -1,0 +1,1249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var b=document.createElement("base");b.href=location.hostname.includes("github.io")?"/Red-River-BBQ-mono-repo/katy/":"/katy/";document.head.appendChild(b)})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red River BBQ & Burger - Authentic Texas Bar-B-Que Since 2002</title>
+    <meta name="description" content="Red River BBQ & Burger serves authentic Texas BBQ in League City, TX. Family-friendly dining with smoked meats, homestyle sides, and catering services.">
+    <link rel="canonical" href="https://redriverbbq.com/">
+    
+    <!-- Comprehensive Schema.org Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://redriverbbq.com/#organization",
+                "name": "Red River BBQ & Burger",
+                "url": "https://redriverbbq.com/",
+                "logo": "https://redriverbbq.com/images/BBQ BURGER UPSCALE trans.png",
+                "description": "Red River BBQ & Burger serves authentic Texas bar-b-que in League City, TX since 2002. Family-friendly dining with smoked meats, homestyle sides, and full catering services.",
+                "sameAs": ["https://www.facebook.com/profile.php?id=100053556979042"],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "Customer Service",
+                    "telephone": "+12815783800",
+                    "areaServed": "US"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "1711 S Mason Rd",
+                    "addressLocality": "Katy",
+                    "addressRegion": "TX",
+                    "postalCode": "77450",
+                    "addressCountry": "US"
+                },
+                "foundingDate": "2002",
+                "foundingLocation": {"@type": "Place", "name": "League City, TX"}
+            },
+            {
+                "@type": "Restaurant",
+                "@id": "https://redriverbbq.com/#restaurant",
+                "name": "Red River BBQ & Burger",
+                "url": "https://redriverbbq.com/",
+                "telephone": "+12815783800",
+                "email": "contact@redriverbbq.com",
+                "description": "Authentic Texas BBQ restaurant serving smoked meats, ribs, brisket, pulled pork, and homestyle sides with catering and private event services.",
+                "image": ["https://redriverbbq.com/images/BBQ BURGER UPSCALE trans.png"],
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "1711 S Mason Rd",
+                    "addressLocality": "Katy",
+                    "addressRegion": "TX",
+                    "postalCode": "77450",
+                    "addressCountry": "US"
+                },
+                "geo": {"@type": "GeoCoordinates", "latitude": 29.4952, "longitude": -95.0863},
+                "openingHoursSpecification": [
+                    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "11:00", "closes": "21:00"},
+                    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "11:00", "closes": "21:30"}
+                ],
+                "servesCuisine": ["BBQ", "Barbecue", "Texas BBQ", "American"],
+                "priceRange": "$$",
+                "hasMenu": {"@type": "Menu", "url": "https://redriverbbq.com/menu.html", "name": "Red River BBQ & Burger Menu"},
+                "acceptsReservations": "false",
+                "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "3645"},
+                "paymentAccepted": ["Cash", "CreditCard", "DebitCard", "ApplePayment", "GooglePayment"]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://redriverbbq.com/#breadcrumb",
+                "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://redriverbbq.com/"}]
+            }
+        ]
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3, h4, .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+        .chalkboard-texture {
+            background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+            background-color: #555555;
+        }
+        .diagonal-stripes {
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.05) 10px, rgba(255,255,255,0.05) 20px);
+            background-color: #666666;
+        }
+        /* Custom jagged edge styling for the divider */
+        .jagged-divider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        .jagged-divider svg {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 60px;
+        }
+        .jagged-divider path {
+            fill: #222;
+        }
+        /* Hide scrollbar for cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #cc0000, #880000);
+            border-radius: 4px;
+        }
+        
+        /* Modern Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(204, 0, 0, 0.4);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(204, 0, 0, 0.8), 0 0 60px rgba(204, 0, 0, 0.4);
+            }
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
+        }
+        @keyframes smoke {
+            0% {
+                opacity: 0;
+                transform: translateY(0) scale(1);
+            }
+            50% {
+                opacity: 0.3;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100px) scale(2);
+            }
+        }
+        
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .animate-fadeInDown {
+            animation: fadeInDown 0.8s ease-out forwards;
+        }
+        .animate-scaleIn {
+            animation: scaleIn 0.6s ease-out forwards;
+        }
+        .animate-slideInLeft {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+        .animate-slideInRight {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        .animate-pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+        
+        /* Delay utilities */
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+        .delay-600 { animation-delay: 0.6s; }
+        
+        /* Glassmorphism */
+        .glass {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-light {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Modern button styles */
+        .btn-modern {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #cc0000 0%, #880000 100%);
+        }
+        .btn-modern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s ease;
+        }
+        .btn-modern:hover::before {
+            left: 100%;
+        }
+        .btn-modern:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(204, 0, 0, 0.4);
+        }
+        
+        .btn-yellow {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #eab308 0%, #f59e0b 100%);
+        }
+        .btn-yellow::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s ease;
+        }
+        .btn-yellow:hover::before {
+            left: 100%;
+        }
+        .btn-yellow:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(234, 179, 8, 0.4);
+        }
+        
+        .btn-outline-modern {
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #fff;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-outline-modern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #fff;
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+        }
+        .btn-outline-modern:hover::before {
+            width: 100%;
+        }
+        .btn-outline-modern:hover {
+            color: #1a1a1a;
+            transform: scale(1.05);
+        }
+        
+        /* Nav link hover effect */
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #eab308, #f59e0b);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Card hover effects */
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Hero parallax image */
+        .hero-image {
+            transition: transform 0.1s ease-out;
+        }
+        
+        /* Smoke effect elements */
+        .smoke {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: smoke 4s ease-out infinite;
+        }
+        
+        /* Shimmer text effect */
+        .shimmer-text {
+            background: linear-gradient(90deg, #cc0000 0%, #ff4444 25%, #cc0000 50%, #ff4444 75%, #cc0000 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 3s linear infinite;
+        }
+        
+        /* Location card styles */
+        .location-card {
+            transition: all 0.3s ease;
+        }
+        .location-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 16px;
+            margin: -16px;
+        }
+        
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Gradient borders */
+        .gradient-border {
+            position: relative;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 2px;
+            background: linear-gradient(135deg, #cc0000, #eab308, #cc0000);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+        
+        /* Mobile Menu Hamburger Animation */
+        .menu-open .hamburger-line:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+        .menu-open .hamburger-line:nth-child(2) {
+            opacity: 0;
+            transform: translateX(-10px);
+        }
+        .menu-open .hamburger-line:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+        
+        /* Mobile menu open state */
+        .mobile-menu-active {
+            overflow: hidden;
+        }
+        .mobile-menu-active #mobile-menu-overlay {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .mobile-menu-active #mobile-menu {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 overflow-x-hidden min-h-screen flex flex-col">
+
+    <!-- HEADER SECTION -->
+    <header class="w-full sticky top-0 z-50">
+        <!-- Top Utility Bar - Hidden on mobile, visible on desktop -->
+        <div class="hidden md:block bg-gradient-to-r from-[#cc0000] via-[#dd1111] to-[#cc0000] border-b-4 border-[#880000] shadow-lg">
+            <div class="max-w-7xl mx-auto flex justify-end items-center py-2 px-4 text-white text-[11px] font-bold uppercase tracking-wider space-x-6">
+                <a href="https://order.toasttab.com/egiftcards/red-river-bbq-league-city-1911-e-main-st-suite-b" target="_blank" rel="noopener noreferrer" class="flex items-center hover:scale-110 transition-transform duration-300 whitespace-nowrap group">
+                    GIFT CARDS <i data-lucide="gift" class="ml-1 w-4 h-4 group-hover:animate-bounce"></i>
+                </a>
+                <button onclick="openOrderModal()" class="flex items-center hover:scale-110 transition-transform duration-300 whitespace-nowrap group bg-transparent border-none cursor-pointer text-white text-[11px] font-bold uppercase tracking-wider">
+                    ORDER ONLINE <i data-lucide="shopping-cart" class="ml-1 w-4 h-4 group-hover:animate-bounce"></i>
+                </button>
+                <a href="https://www.toasttab.com/red-river-bbq-league-city-1911-e-main-st-suite-b/marketing-signup" target="_blank" rel="noopener noreferrer" class="flex items-center hover:scale-110 transition-transform duration-300 whitespace-nowrap group">
+                    E-CLUB <i data-lucide="mail" class="ml-1 w-4 h-4 group-hover:animate-bounce"></i>
+                </a>
+                <a href="https://www.toasttab.com/red-river-bbq-league-city-1911-e-main-st-suite-b/rewardsSignup" target="_blank" rel="noopener noreferrer" class="flex items-center hover:scale-110 transition-transform duration-300 whitespace-nowrap group">
+                    REWARDS <i data-lucide="trophy" class="ml-1 w-4 h-4 group-hover:animate-bounce"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Branding Bar -->
+        <div class="chalkboard-texture py-3 md:py-6 px-4 shadow-2xl relative overflow-hidden">
+            <!-- Subtle animated background glow -->
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-red-900/10 to-transparent opacity-50"></div>
+            
+            <div class="max-w-7xl mx-auto flex justify-between items-center relative z-10">
+                <!-- Logo Section -->
+                <div class="flex items-center animate-fadeInDown">
+                    <a href="#" class="group cursor-pointer">
+                        <img 
+                            src="images/BBQ BURGER UPSCALE trans.png" 
+                            alt="Red River BBQ & Burger" 
+                            class="h-14 md:h-28 w-auto transition-transform duration-300 group-hover:scale-105 drop-shadow-lg"
+                        />
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button 
+                    id="mobile-menu-btn"
+                    class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-lg bg-white/10 hover:bg-white/20 transition-all"
+                    aria-label="Toggle menu"
+                >
+                    <span class="hamburger-line w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+                    <span class="hamburger-line w-6 h-0.5 bg-white rounded my-1.5 transition-all duration-300"></span>
+                    <span class="hamburger-line w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+                </button>
+
+                <!-- Desktop Navigation Section -->
+                <nav class="hidden md:flex flex-col items-end animate-fadeInDown delay-200" style="opacity: 0; animation-fill-mode: forwards;">
+                    <ul class="flex gap-x-6 text-white font-oswald font-bold uppercase text-base tracking-wide">
+                        <li><a href="javascript:void(0)" onclick="window.location.href=(location.hostname.includes('github.io')?'/Red-River-BBQ-mono-repo/':'/')+'locations/'" class="nav-link hover:text-yellow-400 transition-all duration-300">LOCATIONS</a></li>
+                        <li><a href="menu.html" class="nav-link hover:text-yellow-400 transition-all duration-300">DINE-IN MENU</a></li>
+                        <li><a href="to-go.html" class="nav-link hover:text-yellow-400 transition-all duration-300">TO-GO MENU</a></li>
+                        <li><a href="catering.html" class="nav-link hover:text-yellow-400 transition-all duration-300">CATERING</a></li>
+                        <li><a href="./careers.html" class="nav-link hover:text-yellow-400 transition-all duration-300">CAREERS</a></li>
+                        <li><a href="community.html" class="nav-link hover:text-yellow-400 transition-all duration-300">COMMUNITY</a></li>
+                        <li><a href="reviews.html" class="nav-link hover:text-yellow-400 transition-all duration-300">REVIEWS</a></li>
+                    </ul>
+                    <div class="mt-2 flex space-x-4 text-[11px] font-bold">
+                        <a href="https://apps.apple.com/us/app/red-river-restaurants/id6744835848" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:text-red-300 transition-colors flex items-center gap-1 hover:gap-2">
+                            <i data-lucide="smartphone" class="w-3 h-3"></i> iPhone App
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.toasttab.redriverrestaurants&hl=en-us&pli=1" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:text-red-300 transition-colors flex items-center gap-1 hover:gap-2">
+                            <i data-lucide="smartphone" class="w-3 h-3"></i> Android App
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-[280px] bg-white z-[70] transform translate-x-full transition-transform duration-300 ease-out shadow-2xl">
+        <!-- Menu Header -->
+        <div class="flex items-center justify-between p-4 border-b border-gray-200">
+            <span class="text-black font-oswald font-bold text-lg uppercase">Menu</span>
+            <button id="mobile-menu-close" class="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-200 hover:bg-red-600 hover:text-white transition-colors">
+                <i data-lucide="x" class="w-6 h-6 text-black"></i>
+            </button>
+        </div>
+
+        <!-- Menu Content -->
+        <nav class="p-4">
+            <!-- Main Navigation -->
+            <ul class="space-y-1">
+                <li>
+                    <a href="javascript:void(0)" onclick="window.location.href=(location.hostname.includes('github.io')?'/Red-River-BBQ-mono-repo/':'/')+'locations/'" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all"><i data-lucide="map-pin" class="w-5 h-5 text-red-500"></i>Locations</a>
+                </li>
+                <li>
+                    <a href="menu.html" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="book-open" class="w-5 h-5 text-red-500"></i>
+                        Dine-In Menu
+                    </a>
+                </li>
+                <li>
+                    <a href="to-go.html" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="book-open" class="w-5 h-5 text-red-500"></i>
+                        To-Go Menu
+                    </a>
+                </li>
+                <li>
+                    <a href="catering.html" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="utensils" class="w-5 h-5 text-red-500"></i>
+                        Catering
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./careers.html" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="briefcase" class="w-5 h-5 text-red-500"></i>
+                        Careers
+                    </a>
+                </li>
+                <li>
+                    <a href="community.html" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="heart" class="w-5 h-5 text-red-500"></i>
+                        Community
+                    </a>
+                </li>
+                <li>
+                    <a href="reviews.html" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="star" class="w-5 h-5 text-red-500"></i>
+                        Reviews
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Divider -->
+            <div class="my-4 border-t border-gray-300"></div>
+
+            <!-- Quick Actions -->
+            <ul class="space-y-1">
+                <li>
+                    <button onclick="openOrderModal(); closeMobileMenu();" class="w-full text-left flex items-center gap-3 px-4 py-3 text-white font-bold uppercase text-sm tracking-wide rounded-lg bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 transition-all">
+                        <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                        Order Online
+                    </button>
+                </li>
+                <li>
+                    <a href="https://order.toasttab.com/egiftcards/red-river-bbq-league-city-1911-e-main-st-suite-b" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 text-black font-bold uppercase text-sm tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="gift" class="w-5 h-5 text-yellow-500"></i>
+                        Gift Cards
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.toasttab.com/red-river-bbq-league-city-1911-e-main-st-suite-b/marketing-signup" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 text-black font-bold uppercase text-sm tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="mail" class="w-5 h-5 text-yellow-500"></i>
+                        E-Club
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.toasttab.com/red-river-bbq-league-city-1911-e-main-st-suite-b/rewardsSignup" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 text-black font-bold uppercase text-sm tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="trophy" class="w-5 h-5 text-yellow-500"></i>
+                        Rewards
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Divider -->
+            <div class="my-4 border-t border-gray-300"></div>
+
+            <!-- App Links -->
+            <div class="flex gap-2">
+                <a href="https://apps.apple.com/us/app/red-river-restaurants/id6744835848" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 px-3 py-2 text-black text-xs font-bold uppercase rounded-lg bg-gray-200 hover:bg-gray-300 transition-all">
+                    <i data-lucide="smartphone" class="w-4 h-4"></i> iPhone
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.toasttab.redriverrestaurants&hl=en-us&pli=1" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 px-3 py-2 text-black text-xs font-bold uppercase rounded-lg bg-gray-200 hover:bg-gray-300 transition-all">
+                    <i data-lucide="smartphone" class="w-4 h-4"></i> Android
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <main class="flex-grow">
+        <!-- HERO SECTION -->
+        <section class="relative w-full" id="hero">
+            <!-- Mobile: Screenshot Image -->
+            <img 
+                src="images/Screenshot 2026-02-22 220656.png" 
+                alt="Red River BBQ & Burger Team" 
+                class="hero-image md:hidden w-full h-auto"
+                id="hero-image-mobile"
+            />
+            
+            <!-- Desktop: Drive-Thru Image -->
+            <img 
+                src="images/DRIVETHROUGH-OPEN.jpg" 
+                alt="Red River BBQ & Burger Delicious Food" 
+                class="hero-image hidden md:block w-full h-auto"
+                id="hero-image-desktop"
+            />
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="bg-gradient-to-b from-white to-gray-50 py-20 px-4 relative overflow-hidden" id="about">
+            <!-- Decorative elements -->
+            <div class="absolute top-0 left-0 w-64 h-64 bg-red-100 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl opacity-50"></div>
+            
+            <div class="max-w-5xl mx-auto text-center relative z-10">
+                <div class="reveal">
+                    <span class="text-red-600 font-oswald text-sm uppercase tracking-[0.3em] mb-4 block">Our Heritage</span>
+                    <h2 class="text-gray-800 text-4xl md:text-5xl font-oswald font-bold uppercase tracking-tight mb-4 relative inline-block">
+                        LOCAL FAVORITE SINCE 2002
+                    </h2>
+                    <div class="h-1 bg-gradient-to-r from-transparent via-yellow-500 to-transparent w-48 mx-auto mb-8"></div>
+                </div>
+                
+                <p class="reveal text-gray-600 leading-relaxed text-lg md:text-xl mb-10 max-w-3xl mx-auto">
+                    Red River BBQ &amp; Burger opened in Katy in 2011 to bring a family-friendly, Texas-style barbecue experience to the community. Enjoy a welcoming dining room, outdoor seating, and a kid-friendly play area—plus classic smoked meats, burgers, and homestyle sides made for everyday meals or weekend gatherings. We also offer catering for events of any size. View our catering menu for details, and we'll see you soon.
+                </p>
+
+                <!-- Josh Williams & Map Section -->
+                <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <!-- Josh Williams -->
+                    <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100 flex flex-col items-center justify-center">
+                        <img src="images/headshot-josh.jpg" alt="Josh Williams, General Manager" class="w-full h-auto rounded-lg mb-6 object-cover">
+                        <h3 class="font-oswald text-2xl font-bold text-gray-800">Josh Williams</h3>
+                        <p class="text-red-600 font-bold uppercase tracking-wider">General Manager</p>
+                    </div>
+
+                    <!-- Map and Quick Links -->
+                    <div class="flex flex-col h-full">
+                        <!-- Google Map -->
+                        <div class="reveal rounded-2xl overflow-hidden shadow-2xl flex-1 mb-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.1234567!2d-95.4849!3d29.5429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640d5f5f5f5f5f5%3A0x1234567890!2s1711%20S%20Mason%20Rd%2C%20Katy%2C%20TX%2077450!5e0!3m2!1sen!2sus!4v1643567890123" width="100%" height="100%" style="border:0; min-height: 280px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="reveal card-hover bg-white rounded-2xl p-5 text-center shadow-lg border border-gray-100">
+                            <h3 class="text-gray-800 font-bold text-xs uppercase mb-3 flex items-center justify-center gap-2">
+                                <i data-lucide="link" class="w-4 h-4 text-red-500"></i> Quick Links
+                            </h3>
+                            <div class="flex flex-wrap justify-center gap-2">
+                                <a href="menu.html" class="text-xs hover:text-red-600 transition-colors bg-gray-100 hover:bg-red-50 px-3 py-1.5 rounded-full">Dine-In Menu</a>
+                                <a href="to-go.html" class="text-xs hover:text-red-600 transition-colors bg-gray-100 hover:bg-red-50 px-3 py-1.5 rounded-full">To-Go Menu</a>
+                                <a href="catering.html" class="text-xs hover:text-red-600 transition-colors bg-gray-100 hover:bg-red-50 px-3 py-1.5 rounded-full">Catering</a>
+                                <a href="#" onclick="openOrderModal(); return false;" class="text-xs hover:text-red-600 transition-colors bg-gray-100 hover:bg-red-50 px-3 py-1.5 rounded-full">Order</a>
+                                <a href="./careers.html" class="text-xs hover:text-red-600 transition-colors bg-gray-100 hover:bg-red-50 px-3 py-1.5 rounded-full">Careers</a>
+                                <a href="reviews.html" class="text-xs hover:text-red-600 transition-colors bg-gray-100 hover:bg-red-50 px-3 py-1.5 rounded-full">⭐ Customer Reviews</a>
+                                <button onclick="openContactModal(); return false;" class="text-xs hover:text-red-600 transition-colors bg-gray-100 hover:bg-red-50 px-3 py-1.5 rounded-full border-none cursor-pointer">Questions or Concerns?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature Cards -->
+                <div class="reveal grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                    <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-700 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <i data-lucide="flame" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="font-oswald text-xl font-bold text-gray-800 mb-3">Slow Smoked</h3>
+                        <p class="text-gray-600 text-sm">Our meats are smoked low and slow over real Texas post oak wood for that authentic flavor.</p>
+                    </div>
+                    
+                    <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <i data-lucide="users" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="font-oswald text-xl font-bold text-gray-800 mb-3">Family Owned</h3>
+                        <p class="text-gray-600 text-sm">A family tradition serving the community with love and dedication for over 20 years.</p>
+                    </div>
+                    
+                    <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-700 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <i data-lucide="leaf" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="font-oswald text-xl font-bold text-gray-800 mb-3">Fresh Daily</h3>
+                        <p class="text-gray-600 text-sm">We prepare everything fresh daily with locally sourced ingredients whenever possible.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jagged Divider -->
+            <div class="jagged-divider">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5,73.84-4.36,147.54,16.88,218.2,35.26,69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-1.42,1200,34.33V0Z"></path>
+                </svg>
+            </div>
+        </section>
+        
+        <!-- CUSTOMER REVIEWS SECTION -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-5xl font-oswald font-bold text-gray-800 mb-3">What Our Customers Say</h2>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-3">
+                        <div class="flex items-center gap-1 text-yellow-400">
+                            <i data-lucide="star" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+                            <i data-lucide="star" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+                            <i data-lucide="star" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+                            <i data-lucide="star" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+                            <i data-lucide="star" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-2xl sm:text-3xl font-bold text-gray-800">4.3</span>
+                            <span class="text-xs sm:text-sm text-gray-500 uppercase tracking-wide">Google Reviews</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-base sm:text-lg">Based on 1,719 verified reviews</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <!-- Review 1 - Donna Rodriguez -->
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                        <div class="mb-4">
+                            <div class="text-2xl mb-2">⭐⭐⭐⭐⭐</div>
+                            <h3 class="font-bold text-gray-800">Donna Rodriguez</h3>
+                            <p class="text-xs text-gray-500">6 months ago</p>
+                        </div>
+                        <blockquote class="text-gray-700 text-sm leading-relaxed" cite="https://redriverbbq.com/reviews.html#review-donna-rodriguez">
+                            "Don't judge it by the location—food is excellent. Brisket &amp; pulled pork were tender and juicy. Best BBQ in Katy by far."
+                        </blockquote>
+                        <a href="reviews.html#review-donna-rodriguez" class="text-red-600 hover:text-red-800 text-sm font-semibold mt-3 inline-block">Read full review →</a>
+                    </div>
+                    
+                    <!-- Review 2 - Bryan Carbajal -->
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                        <div class="mb-4">
+                            <div class="text-2xl mb-2">⭐⭐⭐⭐⭐</div>
+                            <h3 class="font-bold text-gray-800">Bryan Carbajal</h3>
+                            <p class="text-xs text-gray-500">2 months ago</p>
+                        </div>
+                        <blockquote class="text-gray-700 text-sm leading-relaxed" cite="https://redriverbbq.com/reviews.html#review-bryan-carbajal">
+                            "Great local BBQ spot—meats smoked perfectly. Zach took great care of us—fast, efficient, and really nice."
+                        </blockquote>
+                        <a href="reviews.html#review-bryan-carbajal" class="text-red-600 hover:text-red-800 text-sm font-semibold mt-3 inline-block">Read full review →</a>
+                    </div>
+                    
+                    <!-- Review 3 - Jennifer Valadez -->
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                        <div class="mb-4">
+                            <div class="text-2xl mb-2">⭐⭐⭐⭐⭐</div>
+                            <h3 class="font-bold text-gray-800">Jennifer Valadez</h3>
+                            <p class="text-xs text-gray-500">3 months ago</p>
+                        </div>
+                        <blockquote class="text-gray-700 text-sm leading-relaxed" cite="https://redriverbbq.com/reviews.html#review-jennifer-valadez">
+                            "Our to-go spot when visiting family. Food is always good and staff is friendly. Zach provided outstanding service."
+                        </blockquote>
+                        <a href="reviews.html#review-jennifer-valadez" class="text-red-600 hover:text-red-800 text-sm font-semibold mt-3 inline-block">Read full review →</a>
+                    </div>
+                </div>
+                
+                <div class="text-center flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+                    <a href="reviews.html" class="btn-yellow inline-flex w-full sm:w-auto items-center justify-center gap-2 text-white font-oswald font-bold uppercase tracking-wider py-3 sm:py-4 px-6 sm:px-8 rounded-lg text-base sm:text-lg">
+                        <i data-lucide="star" class="w-5 h-5"></i>
+                        Featured Reviews
+                    </a>
+                    <a href="https://www.google.com/search?sca_esv=dbb6f4e1ffc1e896&hl=en-US&gl=us&sxsrf=ANbL-n5DW_6khf73N75MGOXBE6jxb-HStg:1771948101585&si=AL3DRZHrmvnFAVQPOO2Bzhf8AX9KZZ6raUI_dT7DG_z0kV2_x8sqhB3m1y_GyarLkKy3eQJo0h8opdBd-DzpIgEPL5c_pm8CHRnHPMutqGAfCvLGbdLrhAH_3ZAlc6yp12_qTKLrCNKXOBNd6yYvt3_HC2SKIgeAqQ%3D%3D&q=Red+River+BBQ+%26+Burger+Reviews&sa=X&ved=2ahUKEwiM7p6JvfKSAxXWkWoFHZnHMEAQ0bkNegQILRAH&biw=1536&bih=826&dpr=1.25" target="_blank" rel="noopener noreferrer" class="btn-modern inline-flex w-full sm:w-auto items-center justify-center gap-2 text-white font-oswald font-bold uppercase tracking-wider py-3 sm:py-4 px-6 sm:px-8 rounded-lg animate-pulse-glow text-base sm:text-lg">
+                        Read All 1,719 Reviews
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="diagonal-stripes py-20 px-4 text-gray-300 relative overflow-hidden">
+        
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center relative z-10">
+            
+            <!-- Location Info -->
+            <div class="reveal card-hover glass rounded-2xl p-6 text-center md:text-left">
+                <div class="flex items-center justify-center md:justify-start gap-2 mb-4">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-red-500"></i>
+                    <h3 class="text-white font-bold text-sm uppercase">Visit Us</h3>
+                </div>
+                <p class="text-sm font-bold text-red-400 mb-2">Red River BBQ & Burger</p>
+                <p class="text-sm hover:text-white transition-colors cursor-pointer">
+                    <i data-lucide="phone" class="w-3 h-3 inline mr-1"></i> 281.578.3800
+                </p>
+                <p class="text-sm italic mt-2 text-gray-400">1711 S Mason Rd</p>
+                <p class="text-sm italic text-gray-400">Katy, TX 77450</p>
+                <div class="mt-4 pt-4 border-t border-white/10">
+                    <h4 class="text-white font-bold text-xs uppercase mb-2">Hours:</h4>
+                    <p class="text-xs"><span class="text-yellow-400">Sunday – Thursday |</span> 11:00 am – 9:00pm</p>
+                    <p class="text-xs"><span class="text-yellow-400">Friday & Saturday |</span> 11:00 am – 9:30pm</p>
+                </div>
+                <a href="https://www.facebook.com/profile.php?id=100053556979042" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-full text-white text-xs transition-all hover:scale-105">
+                    <i data-lucide="facebook" class="w-4 h-4"></i> Follow Us
+                </a>
+            </div>
+
+            <!-- Rewards Box (Center) -->
+            <div class="reveal glass rounded-2xl p-8 flex flex-col items-center justify-center text-center space-y-4 gradient-border card-hover">
+                <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-full flex items-center justify-center mb-2 shadow-lg">
+                    <i data-lucide="gift" class="w-8 h-8 text-white"></i>
+                </div>
+                <h3 class="text-white font-oswald text-2xl uppercase font-bold">Rewards Program</h3>
+                <p class="text-sm text-gray-300">Earn points, unlock rewards, get a birthday bonus!</p>
+                <a href="https://www.toasttab.com/red-river-bbq-league-city-1911-e-main-st-suite-b/rewardsSignup" target="_blank" rel="noopener noreferrer" class="btn-outline-modern px-6 py-3 text-sm font-bold uppercase tracking-widest rounded-lg flex items-center gap-2 relative z-10">
+                    <i data-lucide="star" class="w-4 h-4"></i> Join Now
+                </a>
+            </div>
+
+            <!-- Google Map -->
+            <div class="reveal glass rounded-2xl overflow-hidden shadow-2xl">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.1234567!2d-95.4849!3d29.5429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640d5f5f5f5f5f5%3A0x1234567890!2s1711%20S%20Mason%20Rd%2C%20Katy%2C%20TX%2077450!5e0!3m2!1sen!2sus!4v1643567890123" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!-- Bottom Logos Section -->
+        <div class="reveal mt-20 flex justify-center items-center border-t border-white/10 pt-16">
+            <div class="flex flex-wrap md:flex-nowrap justify-center md:justify-between items-end gap-8 md:gap-12 w-full max-w-6xl">
+                <!-- Red River BBQ League City -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <a href="javascript:void(0)" onclick="window.location.href=(location.hostname.includes('github.io')?'/Red-River-BBQ-mono-repo/':'/')+'league-city/'" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(220,38,38,0.5)]">
+                        <img src="images/RRBBQBrand.png" alt="Red River BBQ & Burger - League City" class="h-24 md:h-28 w-auto" />
+                    </a>
+                    <p class="text-xs text-gray-200 mt-2 uppercase tracking-wide">League City TX</p>
+                </div>
+
+                <!-- Brand League City TX -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(0,167,157,0.6)]">
+                        <img src="images/brand.png" alt="Location - League City TX" class="h-24 md:h-28 w-auto" />
+                    </div>
+                    <p class="text-xs text-gray-200 mt-2 uppercase tracking-wide">League City TX</p>
+                </div>
+
+                <!-- Brand Richmond TX -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <a href="#" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(0,167,157,0.6)]">
+                        <img src="images/brand.png" alt="Location - Richmond TX" class="h-24 md:h-28 w-auto" />
+                    </a>
+                    <p class="text-xs text-gray-200 mt-2 uppercase tracking-wide">Richmond TX</p>
+                </div>
+
+                <!-- BBQ Burger Upscale Katy TX -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <a href="index.html" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(220,38,38,0.5)]">
+                        <img src="images/BBQ BURGER UPSCALE trans.png" alt="BBQ Burger Upscale - Katy TX" class="h-24 md:h-28 w-auto" />
+                    </a>
+                    <p class="text-xs text-gray-200 mt-2 uppercase tracking-wide">Katy TX</p>
+                </div>
+
+                <!-- Kiersh Co -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <a href="https://kiershcateringevents.com/" target="_blank" rel="noopener noreferrer" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(255,255,255,0.6)]">
+                        <img src="images/kiersh co white trans.png" alt="Kiersh Catering" class="h-24 md:h-28 w-auto opacity-100 brightness-125" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social & Links -->
+        <div class="reveal mt-12 flex flex-wrap justify-center gap-4">
+            <a href="#" class="glass px-4 py-2 rounded-full text-sm hover:bg-white/20 transition-all flex items-center gap-2">
+                <i data-lucide="briefcase" class="w-4 h-4"></i> Careers
+            </a>
+            <a href="catering.html" class="glass px-4 py-2 rounded-full text-sm hover:bg-white/20 transition-all flex items-center gap-2">
+                <i data-lucide="utensils" class="w-4 h-4"></i> Catering
+            </a>
+            <a href="community.html" class="glass px-4 py-2 rounded-full text-sm hover:bg-white/20 transition-all flex items-center gap-2">
+                <i data-lucide="heart" class="w-4 h-4"></i> Community
+            </a>
+            <a href="https://www.toasttab.com/red-river-bbq-league-city-1911-e-main-st-suite-b/marketing-signup" target="_blank" rel="noopener noreferrer" class="glass px-4 py-2 rounded-full text-sm hover:bg-white/20 transition-all flex items-center gap-2">
+                <i data-lucide="mail" class="w-4 h-4"></i> E-Club
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-12 text-center text-xs text-white uppercase tracking-widest">
+            &copy; 2026 Red River BBQ & Burger. All Rights Reserved.
+            <p class="mt-2 text-gray-300 normal-case tracking-normal">Made with <span class="text-red-500">♥</span> in Texas | <a href="https://rivastrategies.com" target="_blank" rel="noopener noreferrer" class="hover:underline">Riva Strategies</a></p>
+        </div>
+    </footer>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-black/50 z-40" onclick="closeOrderModal()"></div>
+        
+        <!-- Modal Content -->
+        <div class="bg-white rounded-lg shadow-2xl max-w-md w-full z-50 animate-scale-in">
+            <!-- Header -->
+            <div class="bg-[#cc0000] px-6 py-4 flex justify-between items-center rounded-t-lg">
+                <h2 class="text-white font-oswald font-bold text-2xl uppercase">
+                    ORDER ONLINE
+                </h2>
+                <button onclick="closeOrderModal()" class="text-white hover:bg-[#880000] p-1 rounded transition-colors">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6">
+                <div class="space-y-3">
+                    <a href="https://order.redriverrestaurants.com/order/red-river-bbq-katy-1711-s-mason" class="block w-full px-4 py-3 border-b-2 border-gray-300 text-[#cc0000] font-oswald font-bold uppercase text-center hover:bg-red-50 transition-colors" target="_blank" rel="nofollow noopener noreferrer">
+                        PICK-UP
+                    </a>
+                    <a href="https://www.doordash.com/store/red-river-bbq-&amp;-burger-katy-54597/20035367/?event_type=autocomplete&amp;pickup=false" class="block w-full px-4 py-3 text-[#cc0000] font-oswald font-bold uppercase text-center hover:bg-red-50 transition-colors" target="_blank" rel="nofollow noopener noreferrer">
+                        DELIVERY
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-black/50 z-40" onclick="closeContactModal()"></div>
+        
+        <!-- Modal Content -->
+        <div class="bg-white rounded-lg shadow-2xl max-w-md w-full z-50 animate-scale-in">
+            <!-- Header -->
+            <div class="bg-[#cc0000] px-6 py-4 flex justify-between items-center rounded-t-lg">
+                <h2 class="text-white font-oswald font-bold text-2xl uppercase">
+                    Questions or Concerns?
+                </h2>
+                <button onclick="closeContactModal()" class="text-white hover:bg-[#880000] p-1 rounded transition-colors">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <!-- Form Content -->
+            <div class="p-6">
+                <form id="contactForm" action="https://formspree.io/f/mdawzwko" method="POST" class="space-y-4">
+                    <div>
+                        <label for="contactName" class="block text-sm font-bold text-gray-700 mb-1">Name *</label>
+                        <input type="text" id="contactName" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" />
+                    </div>
+                    <div>
+                        <label for="contactEmail" class="block text-sm font-bold text-gray-700 mb-1">Email *</label>
+                        <input type="email" id="contactEmail" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" />
+                    </div>
+                    <div>
+                        <label for="contactPhone" class="block text-sm font-bold text-gray-700 mb-1">Phone</label>
+                        <input type="tel" id="contactPhone" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" />
+                    </div>
+                    <div>
+                        <label for="contactMessage" class="block text-sm font-bold text-gray-700 mb-1">Message *</label>
+                        <textarea id="contactMessage" name="message" required rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 resize-none"></textarea>
+                    </div>
+                    <div class="flex gap-3">
+                        <button id="contactSubmitButton" type="submit" class="flex-1 bg-[#cc0000] hover:bg-[#880000] text-white font-oswald font-bold uppercase px-6 py-3 rounded-lg transition-colors">
+                            Send Message
+                        </button>
+                        <button type="button" onclick="closeContactModal()" class="px-6 py-3 border-2 border-gray-300 text-gray-700 font-oswald font-bold uppercase rounded-lg hover:bg-gray-50 transition-colors">
+                            Cancel
+                        </button>
+                    </div>
+                    <p id="contactFormError" class="hidden text-sm font-semibold text-red-700 bg-red-50 border border-red-200 rounded-lg px-3 py-2"></p>
+                </form>
+                <div id="contactFormSuccess" class="hidden text-center py-8">
+                    <div class="text-green-600 mb-3">
+                        <i data-lucide="check-circle" class="w-16 h-16 mx-auto"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Message Sent!</h3>
+                    <p class="text-gray-600 mb-4">Thank you for contacting us. We'll get back to you soon.</p>
+                    <button onclick="closeContactModal()" class="bg-[#cc0000] hover:bg-[#880000] text-white font-bold px-6 py-2 rounded-lg transition-colors">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // ===== Order Modal Functions =====
+        function openOrderModal() {
+            const modal = document.getElementById('orderModal');
+            modal.classList.remove('hidden');
+            lucide.createIcons();
+        }
+
+        function closeOrderModal() {
+            const modal = document.getElementById('orderModal');
+            modal.classList.add('hidden');
+        }
+
+        // ===== Contact Modal Functions =====
+        function openContactModal() {
+            const modal = document.getElementById('contactModal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                // Reset form
+                const form = document.getElementById('contactForm');
+                const success = document.getElementById('contactFormSuccess');
+                const error = document.getElementById('contactFormError');
+                if (form) {
+                    form.reset();
+                    form.classList.remove('hidden');
+                }
+                if (success) {
+                    success.classList.add('hidden');
+                }
+                if (error) {
+                    error.classList.add('hidden');
+                    error.textContent = '';
+                }
+                // Re-initialize icons after modal opens
+                setTimeout(() => lucide.createIcons(), 100);
+            }
+        }
+
+        function closeContactModal() {
+            const modal = document.getElementById('contactModal');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        // Close modal when pressing Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeOrderModal();
+                closeContactModal();
+            }
+        });
+
+        // Handle contact form submission
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+
+                    const errorBox = document.getElementById('contactFormError');
+                    const submitButton = document.getElementById('contactSubmitButton');
+
+                    if (errorBox) {
+                        errorBox.classList.add('hidden');
+                        errorBox.textContent = '';
+                    }
+
+                    if (submitButton) {
+                        submitButton.disabled = true;
+                        submitButton.classList.add('opacity-60', 'cursor-not-allowed');
+                        submitButton.textContent = 'Sending...';
+                    }
+
+                    try {
+                        const response = await fetch(contactForm.action, {
+                            method: 'POST',
+                            body: new FormData(contactForm),
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        });
+
+                        if (!response.ok) {
+                            throw new Error('Submission failed');
+                        }
+
+                        // Show success message without redirecting away from the modal.
+                        document.getElementById('contactForm').classList.add('hidden');
+                        document.getElementById('contactFormSuccess').classList.remove('hidden');
+                        lucide.createIcons();
+                    } catch (error) {
+                        if (errorBox) {
+                            errorBox.textContent = 'Unable to send your message right now. Please try again in a moment.';
+                            errorBox.classList.remove('hidden');
+                        }
+                    } finally {
+                        if (submitButton) {
+                            submitButton.disabled = false;
+                            submitButton.classList.remove('opacity-60', 'cursor-not-allowed');
+                            submitButton.textContent = 'Send Message';
+                        }
+                    }
+                });
+            }
+        });
+
+        // ===== Parallax Effect for Hero Image =====
+        // Parallax effect disabled - hero image stays fixed when scrolling
+        
+        // ===== Scroll Reveal Animation =====
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealOnScroll = () => {
+            const windowHeight = window.innerHeight;
+            const revealPoint = 100;
+            
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                
+                if (elementTop < windowHeight - revealPoint) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+
+        // ===== Header Shrink on Scroll =====
+        const header = document.querySelector('header');
+        let lastScrollY = 0;
+        
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 100) {
+                header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.3)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+
+        // ===== Smooth Scroll for Anchor Links =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ===== Add entrance animations on page load =====
+        document.addEventListener('DOMContentLoaded', () => {
+            // Trigger reveal for elements already in view
+            setTimeout(revealOnScroll, 100);
+        });
+
+        // ===== Interactive Cursor Effect (subtle glow on cards) =====
+        const cards = document.querySelectorAll('.card-hover');
+        
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+
+        // ===== Mobile Menu Toggle =====
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const body = document.body;
+
+        const openMobileMenu = () => {
+            body.classList.add('mobile-menu-active');
+            mobileMenuBtn.classList.add('menu-open');
+            // Re-initialize icons in mobile menu
+            lucide.createIcons();
+        };
+
+        const closeMobileMenu = () => {
+            body.classList.remove('mobile-menu-active');
+            mobileMenuBtn.classList.remove('menu-open');
+        };
+
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        mobileMenuClose.addEventListener('click', closeMobileMenu);
+        mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+        // Close menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Close menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && body.classList.contains('mobile-menu-active')) {
+                closeMobileMenu();
+            }
+        });
+
+        // Close menu on window resize to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768 && body.classList.contains('mobile-menu-active')) {
+                closeMobileMenu();
+            }
+        });
+    </script>
+
+    <!-- Sticky Order CTA -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button onclick="openOrderModal()" class="btn-modern block px-6 py-4 text-white font-oswald font-bold uppercase tracking-wider rounded-full animate-pulse-glow shadow-2xl text-center">
+            Order Online
+        </button>
+    </div>

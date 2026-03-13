@@ -1,0 +1,1041 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){var b=document.createElement("base");b.href=location.hostname.includes("github.io")?"/Red-River-BBQ-mono-repo/league-city/":"/league-city/";document.head.appendChild(b)})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dine-In Menu - Red River BBQ & Grill | Authentic Texas Bar-B-Que</title>
+    <meta name="description" content="Red River BBQ & Grill dine-in menu - featuring slow-smoked Texas BBQ, ribs, brisket, pulled pork, chicken, and homestyle sides.">
+    <link rel="canonical" href="https://redriverbbq.com/dine-in-menu.html">
+    
+    <!-- Comprehensive Menu Schema for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://redriverbbq.com/dine-in-menu.html#breadcrumb",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://redriverbbq.com/"},
+                    {"@type": "ListItem", "position": 2, "name": "Dine-In Menu", "item": "https://redriverbbq.com/dine-in-menu.html"}
+                ]
+            },
+            {
+                "@type": "Menu",
+                "@id": "https://redriverbbq.com/dine-in-menu.html#menu",
+                "name": "Red River BBQ & Grill Dine-In Menu",
+                "description": "Authentic Texas BBQ menu featuring slow-smoked meats, ribs, brisket, pulled pork, chicken, and homestyle sides.",
+                "url": "https://redriverbbq.com/dine-in-menu.html",
+                "image": "https://redriverbbq.com/images/RRBBQBrand.png",
+                "hasMenuSection": [
+                    {"@type": "MenuSection", "name": "Appetizers"},
+                    {"@type": "MenuSection", "name": "Salads & Gumbo"},
+                    {"@type": "MenuSection", "name": "Texas Bar-B-Que"},
+                    {"@type": "MenuSection", "name": "Bar-B-Que Spuds"},
+                    {"@type": "MenuSection", "name": "Burgers & Sandwiches"},
+                    {"@type": "MenuSection", "name": "Steak & Chicken"},
+                    {"@type": "MenuSection", "name": "Fish & Shrimp"},
+                    {"@type": "MenuSection", "name": "Kid's Menu"},
+                    {"@type": "MenuSection", "name": "Desserts"},
+                    {"@type": "MenuSection", "name": "Lunch Specials"},
+                    {"@type": "MenuSection", "name": "Daily Specials"},
+                    {"@type": "MenuSection", "name": "Side Choices"}
+                ],
+                "provider": {"@type": "Restaurant", "@id": "https://redriverbbq.com/#restaurant"},
+                "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "3645"}
+            }
+        ]
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3, h4, .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+        .chalkboard-texture {
+            background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+            background-color: #555555;
+        }
+        .diagonal-stripes {
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.05) 10px, rgba(255,255,255,0.05) 20px);
+            background-color: #666666;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #cc0000, #880000);
+            border-radius: 4px;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .animate-fadeInDown {
+            animation: fadeInDown 0.8s ease-out forwards;
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        
+        .glass {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn-modern {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #cc0000 0%, #880000 100%);
+        }
+        .btn-modern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s ease;
+        }
+        .btn-modern:hover::before {
+            left: 100%;
+        }
+        .btn-modern:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(204, 0, 0, 0.4);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #eab308, #f59e0b);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .menu-open .hamburger-line:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+        .menu-open .hamburger-line:nth-child(2) {
+            opacity: 0;
+            transform: translateX(-10px);
+        }
+        .menu-open .hamburger-line:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+        
+        .mobile-menu-active {
+            overflow: hidden;
+        }
+        .mobile-menu-active #mobile-menu-overlay {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .mobile-menu-active #mobile-menu {
+            transform: translateX(0);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .gradient-border {
+            position: relative;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 2px;
+            background: linear-gradient(135deg, #cc0000, #eab308, #cc0000);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+
+        .btn-outline-modern {
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #fff;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-outline-modern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #fff;
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+        }
+        .btn-outline-modern:hover::before {
+            width: 100%;
+        }
+        .btn-outline-modern:hover {
+            color: #1a1a1a;
+            transform: scale(1.05);
+        }
+
+        /* Dine-in board menu styles */
+        .menu-board-wrap {
+            background: #dfdfdf;
+            border-top: 6px solid #cfcfcf;
+        }
+        .menu-board-title {
+            color: #d71818;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .menu-sheet {
+            background: #efefef;
+            border: 2px solid #d3d3d3;
+            border-radius: 14px;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+            padding: 1.5rem;
+        }
+        .menu-sheet + .menu-sheet {
+            margin-top: 1.75rem;
+        }
+        .menu-grid-2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+        .menu-section-title {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            line-height: 1;
+            text-transform: uppercase;
+            color: #d71818;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        .menu-section-note {
+            text-align: center;
+            font-style: italic;
+            color: #333;
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+        .menu-items {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-items li {
+            display: flex;
+            justify-content: space-between;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+            align-items: baseline;
+        }
+        .menu-items .name {
+            color: #2b4f81;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .menu-items .desc {
+            color: #222;
+            display: block;
+            font-size: 0.88rem;
+            line-height: 1.3;
+            margin-top: 0.1rem;
+            text-transform: none;
+            font-weight: 400;
+        }
+        .menu-items .price {
+            color: #111;
+            font-weight: 700;
+            white-space: nowrap;
+            font-size: 0.95rem;
+        }
+        .dotted-box {
+            border: 2px dotted #d14545;
+            border-radius: 12px;
+            padding: 0.6rem 0.75rem;
+            margin: 0.45rem 0;
+        }
+        .double-rule {
+            border-top: 2px dotted #cf3e3e;
+            margin: 1rem 0;
+        }
+        .side-band {
+            margin-top: 1rem;
+            background: #dce8d2;
+            border: 2px dotted #556b2f;
+            border-radius: 12px;
+            padding: 0.9rem;
+        }
+        .side-band h3 {
+            color: #d71818;
+            font-size: 2rem;
+            line-height: 1;
+            text-transform: uppercase;
+            font-family: 'Oswald', sans-serif;
+            margin-bottom: 0.4rem;
+            text-align: center;
+        }
+        .side-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.35rem 1rem;
+            font-weight: 700;
+            color: #1b2a41;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        .menu-warning {
+            text-align: center;
+            color: #b64646;
+            font-style: italic;
+            margin: 0.75rem 0;
+            font-size: 0.9rem;
+        }
+        @media (min-width: 1024px) {
+            .menu-grid-2 {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.75rem;
+            }
+        }
+        @media (max-width: 767px) {
+            .menu-section-title {
+                font-size: 1.6rem;
+            }
+            .side-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 overflow-x-hidden min-h-screen flex flex-col">
+
+    <!-- HEADER SECTION -->
+    <header class="w-full sticky top-0 z-50">
+        <!-- Top Utility Bar - Hidden on mobile, visible on desktop -->
+        <div class="hidden md:block bg-gradient-to-r from-[#cc0000] via-[#dd1111] to-[#cc0000] border-b-4 border-[#880000] shadow-lg">
+            <div class="max-w-7xl mx-auto flex justify-end items-center py-2 px-4 text-white text-[11px] font-bold uppercase tracking-wider space-x-6">
+                <a href="https://order.toasttab.com/egiftcards/red-river-bbq-league-city-1911-e-main-st-suite-b" target="_blank" rel="noopener noreferrer" class="flex items-center hover:scale-110 transition-transform duration-300 whitespace-nowrap group">
+                    GIFT CARDS <i data-lucide="gift" class="ml-1 w-4 h-4 group-hover:animate-bounce"></i>
+                </a>
+                <button onclick="openOrderModal()" class="flex items-center hover:scale-110 transition-transform duration-300 whitespace-nowrap group bg-transparent border-none cursor-pointer text-white text-[11px] font-bold uppercase tracking-wider">
+                    ORDER ONLINE <i data-lucide="shopping-cart" class="ml-1 w-4 h-4 group-hover:animate-bounce"></i>
+                </button>
+                <a href="https://www.toasttab.com/red-river-bbq-league-city-1911-e-main-st-suite-b/marketing-signup" target="_blank" rel="noopener noreferrer" class="flex items-center hover:scale-110 transition-transform duration-300 whitespace-nowrap group">
+                    E-CLUB <i data-lucide="mail" class="ml-1 w-4 h-4 group-hover:animate-bounce"></i>
+                </a>
+                <a href="https://www.toasttab.com/red-river-bbq-league-city-1911-e-main-st-suite-b/rewardsSignup" target="_blank" rel="noopener noreferrer" class="flex items-center hover:scale-110 transition-transform duration-300 whitespace-nowrap group">
+                    REWARDS <i data-lucide="trophy" class="ml-1 w-4 h-4 group-hover:animate-bounce"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Branding Bar -->
+        <div class="chalkboard-texture py-3 md:py-6 px-4 shadow-2xl relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-red-900/10 to-transparent opacity-50"></div>
+            
+            <div class="max-w-7xl mx-auto flex justify-between items-center relative z-10">
+                <!-- Logo Section -->
+                <div class="flex items-center animate-fadeInDown">
+                    <a href="index.html" class="group cursor-pointer">
+                        <img 
+                            src="images/RRBBQBrand.png" 
+                            alt="Red River BBQ & Grill" 
+                            class="h-14 md:h-28 w-auto transition-transform duration-300 group-hover:scale-105 drop-shadow-lg"
+                        />
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button 
+                    id="mobile-menu-btn"
+                    class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-lg bg-white/10 hover:bg-white/20 transition-all"
+                    aria-label="Toggle menu"
+                >
+                    <span class="hamburger-line w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+                    <span class="hamburger-line w-6 h-0.5 bg-white rounded my-1.5 transition-all duration-300"></span>
+                    <span class="hamburger-line w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+                </button>
+
+                <!-- Desktop Navigation Section -->
+                <nav class="hidden md:flex flex-col items-end animate-fadeInDown delay-200" style="opacity: 0; animation-fill-mode: forwards;">
+                    <ul class="flex gap-x-6 text-white font-oswald font-bold uppercase text-base tracking-wide">
+                        <li><a href="index.html#location" class="nav-link hover:text-yellow-400 transition-all duration-300">LOCATION</a></li>
+                        <li><a href="dine-in-menu.html" class="nav-link hover:text-yellow-400 transition-all duration-300 text-yellow-400">DINE IN MENU</a></li>
+                        <li><a href="to-go-menu.html" class="nav-link hover:text-yellow-400 transition-all duration-300">TO-GO MENU</a></li>
+                        <li><a href="catering.html" class="nav-link hover:text-yellow-400 transition-all duration-300">CATERING MENU</a></li>
+                        <li><a href="party-room.html" class="nav-link hover:text-yellow-400 transition-all duration-300">PARTY ROOM</a></li>
+                        <li><a href="./careers.html" class="nav-link hover:text-yellow-400 transition-all duration-300">CAREERS</a></li>
+                        <li><a href="community.html" class="nav-link hover:text-yellow-400 transition-all duration-300">COMMUNITY</a></li>
+                        <li><a href="reviews.html" class="nav-link hover:text-yellow-400 transition-all duration-300">REVIEWS</a></li>
+                    </ul>
+                    <div class="mt-2 flex space-x-4 text-[11px] font-bold">
+                        <a href="https://apps.apple.com/us/app/red-river-restaurants/id6744835848" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:text-red-300 transition-colors flex items-center gap-1 hover:gap-2">
+                            <i data-lucide="smartphone" class="w-3 h-3"></i> iPhone App
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.toasttab.redriverrestaurants&hl=en-us&pli=1" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:text-red-300 transition-colors flex items-center gap-1 hover:gap-2">
+                            <i data-lucide="smartphone" class="w-3 h-3"></i> Android App
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-[280px] bg-white z-[70] transform translate-x-full transition-transform duration-300 ease-out shadow-2xl">
+        <!-- Menu Header -->
+        <div class="flex items-center justify-between p-4 border-b border-gray-200">
+            <span class="text-black font-oswald font-bold text-lg uppercase">Menu</span>
+            <button id="mobile-menu-close" class="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-200 hover:bg-red-600 hover:text-white transition-colors">
+                <i data-lucide="x" class="w-6 h-6 text-black"></i>
+            </button>
+        </div>
+
+        <!-- Menu Content -->
+        <nav class="p-4">
+            <!-- Main Navigation -->
+            <ul class="space-y-1">
+                <li>
+                    <a href="index.html#location" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-red-500"></i>
+                        Location
+                    </a>
+                </li>
+                <li>
+                    <a href="dine-in-menu.html" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all bg-gray-100">
+                        <i data-lucide="book-open" class="w-5 h-5 text-red-500"></i>
+                        Dine In Menu
+                    </a>
+                </li>
+                <li>
+                    <a href="to-go-menu.html" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="package" class="w-5 h-5 text-red-500"></i>
+                        To-Go Menu
+                    </a>
+                </li>
+                <li>
+                    <a href="catering.html" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="utensils" class="w-5 h-5 text-red-500"></i>
+                        Catering Menu
+                    </a>
+                </li>
+                <li>
+                    <a href="party-room.html" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="party-popper" class="w-5 h-5 text-red-500"></i>
+                        Party Room
+                    </a>
+                </li>
+                <li>
+                    <a href="./careers.html" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="briefcase" class="w-5 h-5 text-red-500"></i>
+                        Careers
+                    </a>
+                </li>
+                <li>
+                    <a href="community.html" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="heart" class="w-5 h-5 text-red-500"></i>
+                        Community
+                    </a>
+                </li>
+                <li>
+                    <a href="reviews.html" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="star" class="w-5 h-5 text-red-500"></i>
+                        Reviews
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Divider -->
+            <div class="my-4 border-t border-gray-300"></div>
+
+            <!-- Quick Actions -->
+            <ul class="space-y-1">
+                <li>
+                    <button onclick="openOrderModal(); closeMobileMenu();" class="w-full text-left flex items-center gap-3 px-4 py-3 text-white font-bold uppercase text-sm tracking-wide rounded-lg bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 transition-all">
+                        <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                        Order Online
+                    </button>
+                </li>
+                <li>
+                    <a href="https://order.toasttab.com/egiftcards/red-river-bbq-league-city-1911-e-main-st-suite-b" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 text-black font-bold uppercase text-sm tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="gift" class="w-5 h-5 text-yellow-500"></i>
+                        Gift Cards
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.toasttab.com/red-river-bbq-league-city-1911-e-main-st-suite-b/marketing-signup" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 text-black font-bold uppercase text-sm tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="mail" class="w-5 h-5 text-yellow-500"></i>
+                        E-Club
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.toasttab.com/red-river-bbq-league-city-1911-e-main-st-suite-b/rewardsSignup" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 text-black font-bold uppercase text-sm tracking-wide rounded-lg hover:bg-gray-100 transition-all">
+                        <i data-lucide="trophy" class="w-5 h-5 text-yellow-500"></i>
+                        Rewards
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Divider -->
+            <div class="my-4 border-t border-gray-300"></div>
+
+            <!-- App Links -->
+            <div class="flex gap-2">
+                <a href="https://apps.apple.com/us/app/red-river-restaurants/id6744835848" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 px-3 py-2 text-black text-xs font-bold uppercase rounded-lg bg-gray-200 hover:bg-gray-300 transition-all">
+                    <i data-lucide="smartphone" class="w-4 h-4"></i> iPhone
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.toasttab.redriverrestaurants&hl=en-us&pli=1" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 px-3 py-2 text-black text-xs font-bold uppercase rounded-lg bg-gray-200 hover:bg-gray-300 transition-all">
+                    <i data-lucide="smartphone" class="w-4 h-4"></i> Android
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <main class="flex-grow menu-board-wrap">
+
+                <!-- Hero Carousel -->
+        <section class="relative w-full h-[300px] md:h-[500px] overflow-hidden">
+            <div class="hero-carousel absolute inset-0">
+                <div class="hero-slide active">
+                    <img src="homepagehero/Apetizers.jpg" alt="Red River BBQ Appetizers" class="w-full h-full object-cover" />
+                </div>
+                <div class="hero-slide">
+                    <img src="homepagehero/AYCE RIBS2021.jpeg" alt="Red River BBQ All You Can Eat Ribs" class="w-full h-full object-cover" />
+                </div>
+                <div class="hero-slide">
+                    <img src="homepagehero/Poppers.jpg" alt="Red River BBQ Poppers" class="w-full h-full object-cover" />
+                </div>
+                <div class="hero-slide">
+                    <img src="homepagehero/Brisket Gumbo.jpeg" alt="Red River BBQ Brisket Gumbo" class="w-full h-full object-cover" />
+                </div>
+            </div>
+            <div class="absolute inset-0 bg-black/30"></div>
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                <button class="carousel-dot active w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all" data-slide="0"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all" data-slide="1"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all" data-slide="2"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all" data-slide="3"></button>
+            </div>
+        </section>
+
+        <section class="px-4 py-8 md:py-12">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 md:gap-8 mb-6">
+                    <img src="images/RRBBQBrand.png" alt="Red River BBQ & Grill" class="w-24 h-24 md:w-28 md:h-28 object-contain" />
+                    <p class="menu-board-title text-5xl md:text-7xl font-oswald uppercase text-center" aria-hidden="true">Dine-In Menu</p>
+                </div>
+
+                <article class="menu-sheet">
+                    <div class="menu-grid-2">
+                        <section>
+                            <h2 class="menu-section-title">Appetizers</h2>
+                            <ul class="menu-items">
+                                <li class="dotted-box"><span><span class="name">Texas Hushpuppies</span><span class="desc">Brisket, bar-b-que sauce &amp; pepper jack cheese, battered &amp; fried</span></span><span class="price">12.99</span></li>
+                                <li><span><span class="name">Brisket Cheese Fries</span><span class="desc">Fries, brisket, queso, pico de gallo, jalapenos &amp; sour cream</span></span><span class="price">12.99</span></li>
+                                <li><span><span class="name">Brisket Quesadillas</span><span class="desc">Pico de gallo, pickled jalapenos &amp; sour cream</span></span><span class="price">13.99</span></li>
+                                <li><span><span class="name">Texas Queso</span><span class="desc">Chile con queso, brisket, pico de gallo &amp; fresh fried tortilla chips</span></span><span class="price">12.99</span></li>
+                                <li><span><span class="name">Smoked Wings</span><span class="desc">8 Texas sized wings, smoked &amp; rolled in our famous bar-b-que sauce</span></span><span class="price">12.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Jalapeno Shrimp Poppers</span><span class="desc">4 fried jalapenos stuffed with a Gulf shrimp &amp; pepper jack cheese</span></span><span class="price">12.99</span></li>
+                                <li><span><span class="name">Fried Mushrooms</span></span><span class="price">9.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Loaded Bottle Caps</span><span class="desc">Fried jalapenos, brisket, queso, pico de gallo &amp; sour cream</span></span><span class="price">13.99</span></li>
+                                <li><span><span class="name">Brisket Nachos</span><span class="desc">Tortilla chips, queso, pico, beans, brisket, sour cream &amp; bar-b-que sauce</span></span><span class="price">13.99</span></li>
+                                <li><span><span class="name">Fried Pickles</span></span><span class="price">9.99</span></li>
+                            </ul>
+
+                            <div class="double-rule"></div>
+
+                            <h2 class="menu-section-title">Bar-B-Que Spuds</h2>
+                            <ul class="menu-items">
+                                <li><span><span class="name">Bar-B-Que Spud</span><span class="desc">Turkey breast, smoked chicken, pulled pork, sausage or spicy sausage</span></span><span class="price">12.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Two Meat Combo Spud</span><span class="desc">Brisket, turkey breast, smoked chicken, pulled pork, sausage or spicy sausage</span></span><span class="price">15.79</span></li>
+                                <li><span><span class="name">Brisket Spud</span></span><span class="price">14.99</span></li>
+                                <li><span><span class="name">Grilled Chicken Spud</span></span><span class="price">14.99</span></li>
+                            </ul>
+
+                            <div class="double-rule"></div>
+
+                            <h2 class="menu-section-title">Bar-B-Que Sandwiches</h2>
+                            <p class="menu-section-note">Sub a white sourdough bun, jalapeno cheese sourdough or po-boy bun for just .99</p>
+                            <ul class="menu-items">
+                                <li><span><span class="name">Bar-B-Que Sandwich</span><span class="desc">Turkey breast, pulled pork, sausage, spicy sausage, jalapeno cheese sausage or bar-b-que chicken<br>(with 1 side) 13.99 &nbsp; (with 2 sides) 16.99</span></span></li>
+                                <li><span><span class="name">Triple Threat</span><span class="desc">Pulled pork, spicy sausage, peppered bacon &amp; cheddar cheese on a jalapeno cheese bun<br>(with 1 side) 15.99 &nbsp; (with 2 sides) 18.99</span></span></li>
+                                <li class="dotted-box"><span><span class="name">Brisket Sandwich</span><span class="desc">Sliced or chopped<br>(with 1 side) 14.99 &nbsp; (with 2 sides) 17.99</span></span></li>
+                                <li><span><span class="name">The Memphis</span><span class="desc">Pulled pork, sourdough bun &amp; cole slaw<br>(with 1 side) 13.99 &nbsp; (with 2 sides) 16.99</span></span></li>
+                                <li><span><span class="name">Brisket Melt</span><span class="desc">Moist cut brisket, jalapeno cheese bun, cheddar cheese &amp; grilled onions<br>(with 1 side) 15.99 &nbsp; (with 2 sides) 18.99</span></span></li>
+                                <li class="dotted-box"><span><span class="name">Turkey Swiss</span><span class="desc">Smoked turkey breast, jalapeno cheese bun, Swiss cheese &amp; peppered bacon<br>(with 1 side) 14.99 &nbsp; (with 2 sides) 17.99</span></span></li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h2 class="menu-section-title">Salads &amp; Gumbo</h2>
+                            <ul class="menu-items">
+                                <li class="dotted-box"><span><span class="name">Salad Bar</span><span class="desc">All you can eat &nbsp; 10.99<br>with Chicken Tenders +4<br>with Bar-B-Que Chicken +4<br>with Grilled Chicken +5<br>with Smoked Turkey Breast +5</span></span></li>
+                                <li><span><span class="name">Side Salad</span><span class="desc">with entree</span></span><span class="price">5.99</span></li>
+                                <li><span><span class="name">Brisket Taco Salad</span><span class="desc">Refried beans, shredded lettuce, grated cheddar, chopped brisket, bar-b-que sauce &amp; sour cream</span></span><span class="price">15.99</span></li>
+                                <li><span><span class="name">Chicken &amp; Sausage Gumbo</span><span class="desc">White rice &amp; garlic bread</span></span><span class="price">12.99</span></li>
+                                <li><span><span class="name">Gumbo &amp; Salad Bar</span></span><span class="price">16.99</span></li>
+                            </ul>
+
+                            <div class="double-rule"></div>
+
+                            <h2 class="menu-section-title">Texas Bar-B-Que</h2>
+                            <p class="menu-section-note">Includes your choice of 2 sides &amp; a freshly baked yeast roll.<br>Substitute 2 sides for a baked potato for 1.99</p>
+                            <ul class="menu-items">
+                                <li><span><span class="name">Pulled Pork</span></span><span class="price">17.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Brisket</span></span><span class="price">18.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Turkey Breast</span></span><span class="price">17.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Pork Ribs (8)</span></span><span class="price">18.99</span></li>
+                                <li><span><span class="name">1/2 Chicken</span></span><span class="price">17.99</span></li>
+                                <li><span><span class="name">Smoked Wings &amp; Ribs</span><span class="desc">4 smoked wings &amp; 3 pork ribs</span></span><span class="price">16.99</span></li>
+                                <li><span><span class="name">Sausage</span><span class="desc">regular or spicy</span></span><span class="price">16.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Jalapeno Chz Sausage</span></span><span class="price">17.25</span></li>
+                                <li class="dotted-box"><span><span class="name">Two Meat Combo</span></span><span class="price">18.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Three Meat Combo</span></span><span class="price">20.99</span></li>
+                            </ul>
+
+                            <div class="double-rule"></div>
+
+                            <h2 class="menu-section-title">Burgers &amp; Sandwiches</h2>
+                            <p class="menu-section-note">Fresh beef, ground in-house daily 1/2 lb burgers. Includes French fries.<br>Sub homemade Onion Rings +.99</p>
+                            <ul class="menu-items">
+                                <li><span><span class="name">Angus Burger</span><span class="desc">1855 Black Angus Beef</span></span><span class="price">13.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Bacon Cheeseburger</span><span class="desc">Thick cut peppered bacon &amp; cheese</span></span><span class="price">15.99</span></li>
+                                <li><span><span class="name">Mushroom Swiss Burger</span><span class="desc">Sauteed mushrooms &amp; Swiss cheese</span></span><span class="price">14.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Durango Burger</span><span class="desc">Pepper jack cheese, grilled onions, mushrooms &amp; jalapenos</span></span><span class="price">14.99</span></li>
+                                <li><span><span class="name">Smokehouse Burger</span><span class="desc">Cheddar cheese, grilled onions, peppered bacon &amp; our famous bar-b-que sauce</span></span><span class="price">15.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Southwest Grilled Chicken Sandwich</span><span class="desc">Jalapeno cheese sourdough bun, pepper jack cheese &amp; grilled onions</span></span><span class="price">14.99</span></li>
+                                <li><span><span class="name">Grilled CK Sandwich</span><span class="desc">Topped with grilled onions</span></span><span class="price">13.99</span></li>
+                                <li><span><span class="name">Spicy Chicken Sandwich</span><span class="desc">Crispy chicken breast, Buffalo sauce, Swiss cheese, shredded lettuce, pickles &amp; mayo</span></span><span class="price">14.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Jumbo Shrimp Po-Boy</span><span class="desc">5 hand battered Gulf shrimp, garlic toasted po-boy bun</span></span><span class="price">15.99</span></li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div class="side-band">
+                        <h3>Side Choices</h3>
+                        <div class="side-grid">
+                            <span>Mom's Potato Salad</span>
+                            <span>Pinto Beans</span>
+                            <span>Wild Rice</span>
+                            <span>Sweet Potato Fries</span>
+                            <span>Mashed Potatoes</span>
+                            <span>Green Beans</span>
+                            <span>Cream Corn</span>
+                            <span>French Fries</span>
+                            <span>Macaroni &amp; Cheese</span>
+                            <span>Baked Beans</span>
+                            <span>Macaroni Salad</span>
+                            <span>Fried Okra</span>
+                            <span>Corn on the Cob</span>
+                            <span>Cole Slaw</span>
+                            <span>Broccoli, Rice &amp; Cheese (new)</span>
+                            <span>Onion Rings +.99</span>
+                            <span>Miss Vickie's Chips: Sea Salt</span>
+                            <span>Miss Vickie's Chips: Bar-B-Que</span>
+                            <span>Miss Vickie's Chips: Jalapeno</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-sheet">
+                    <div class="menu-grid-2">
+                        <section>
+                            <h2 class="menu-section-title">Steak &amp; Chicken</h2>
+                            <p class="menu-section-note">Your choice of 2 sides &amp; salad bar<br>Substitute 2 sides for a baked potato 1.99</p>
+                            <ul class="menu-items">
+                                <li class="dotted-box"><span><span class="name">Chicken Fried Steak</span><span class="desc">Hand battered cutlet, golden fried &amp; served with homemade cream gravy</span></span><span class="price">20.99</span></li>
+                                <li><span><span class="name">Grilled Chicken Breast</span><span class="desc">Marinated chicken breast char-grilled &amp; topped with sauteed onions</span></span><span class="price">17.99</span></li>
+                                <li><span><span class="name">1855 Black Angus Ribeye</span><span class="desc">(12oz) 26.99 &nbsp; (16oz) 31.99</span></span></li>
+                                <li class="dotted-box"><span><span class="name">Pepper Jack Chicken</span><span class="desc">Grilled chicken breast, pepper jack cheese, sauteed mushrooms, onions &amp; jalapenos</span></span><span class="price">18.99</span></li>
+                                <li><span><span class="name">Chicken Fried Pork Chop</span><span class="desc">Hand battered boneless pork chop with homemade cream gravy</span></span><span class="price">19.99</span></li>
+                                <li><span><span class="name">Chicken Fried Chicken</span><span class="desc">Fresh hand battered chicken breast &amp; homemade cream gravy</span></span><span class="price">17.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Crispy Chicken Tenders</span><span class="desc">Fresh hand battered tenders with two sides. Salad bar not included<br>Original Crispy, Buffalo or Garlic Parmesan</span></span><span class="price">15.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Add 4 Shrimp Fried or Grilled</span></span><span class="price">6.99</span></li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h2 class="menu-section-title">Fish &amp; Shrimp</h2>
+                            <p class="menu-section-note">Your choice of two sides.<br>Substitute two sides for a baked potato 1.99</p>
+                            <ul class="menu-items">
+                                <li class="dotted-box"><span><span class="name">Jumbo Gulf Fried Shrimp</span><span class="desc">Jumbo Gulf shrimp, hand battered &amp; fried to a golden brown. Includes homemade hushpuppies<br>(6pc) 17.99 &nbsp; (8pc) 20.99</span></span></li>
+                                <li><span><span class="name">Mississippi Fried Catfish</span><span class="desc">Two fresh fillets fried to a golden brown. Includes hushpuppies</span></span><span class="price">19.99</span></li>
+                                <li><span><span class="name">Grilled Shrimp Skewer</span><span class="desc">8 fresh jumbo shrimp served over a bed of wild rice with your choice of 2 sides &amp; a homemade yeast roll</span></span><span class="price">20.99</span></li>
+                                <li><span><span class="name">Shrimp &amp; Catfish Combo</span><span class="desc">Four jumbo Gulf fried shrimp and a hand battered catfish fillet. Includes homemade hushpuppies</span></span><span class="price">20.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Fried Shrimp &amp; Chicken Tenders</span><span class="desc">3 hand battered tenders &amp; 4 jumbo Gulf fried shrimp</span></span><span class="price">19.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Blackened Redfish</span><span class="desc">Texas redfish fillet, blackened</span></span><span class="price">20.99</span></li>
+                                <li><span><span class="name">Blackened Redfish &amp; Shrimp</span><span class="desc">Blackened Texas redfish &amp; 4 jumbo Gulf grilled shrimp over wild rice</span></span><span class="price">26.99</span></li>
+                                <li class="dotted-box"><span><span class="name">Add a Side Salad to any entree</span></span><span class="price">5.99</span></li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <p class="menu-warning">Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase the risk of foodborne illness.</p>
+
+                    <div class="menu-grid-2">
+                        <section>
+                            <h2 class="menu-section-title">Kid's Menu</h2>
+                            <p class="menu-section-note">12 &amp; under. Kid drink is included.</p>
+                            <ul class="menu-items">
+                                <li><span><span class="name">Mac &amp; Cheese</span><span class="desc">with fries</span></span><span class="price">7.99</span></li>
+                                <li><span><span class="name">Bar-B-Que Plate</span><span class="desc">with 2 sides<br>with Brisket +2</span></span><span class="price">8.99</span></li>
+                                <li><span><span class="name">Hamburger</span><span class="desc">with fries</span></span><span class="price">7.99</span></li>
+                                <li><span><span class="name">Grilled Cheese</span><span class="desc">with fries</span></span><span class="price">7.99</span></li>
+                                <li><span><span class="name">Chicken Nuggets</span><span class="desc">with fries</span></span><span class="price">7.99</span></li>
+                                <li><span><span class="name">Corn Dog</span><span class="desc">with fries</span></span><span class="price">7.99</span></li>
+                                <li><span><span class="name">Bar-B-Que Sandwich</span><span class="desc">with fries<br>with Brisket +1</span></span><span class="price">7.99</span></li>
+                            </ul>
+
+                            <div class="double-rule"></div>
+
+                            <h2 class="menu-section-title">Lunch Specials</h2>
+                            <p class="menu-section-note">Monday - Friday &nbsp; 11:00am - 3:00pm</p>
+                            <ul class="menu-items dotted-box">
+                                <li><span><span class="name">#1 &nbsp; 1/2 LB Angus Burger</span><span class="desc">with fries</span></span><span class="price">12.99</span></li>
+                                <li><span><span class="name">#2 &nbsp; Chopped Brisket Sandwich</span><span class="desc">with fries</span></span><span class="price">12.99</span></li>
+                                <li><span><span class="name">#3 &nbsp; Chicken Tenders</span><span class="desc">(4 pc) with fries</span></span><span class="price">12.99</span></li>
+                                <li><span><span class="name">#4 &nbsp; Jumbo Fried Shrimp</span><span class="desc">(6pc) with fries &amp; slaw</span></span><span class="price">14.99</span></li>
+                                <li><span><span class="name">#5 &nbsp; Chicken Fried Steak</span><span class="desc">with two sides &amp; a dinner roll</span></span><span class="price">15.99</span></li>
+                                <li><span><span class="name">#6 &nbsp; Sausage &amp; Chicken</span><span class="desc">combo plate with two sides</span></span><span class="price">15.99</span></li>
+                                <li><span><span class="name">#7 &nbsp; Chopped Brisket Spud</span><span class="desc">with butter, cheese &amp; s/c</span></span><span class="price">12.99</span></li>
+                                <li><span><span class="name">#8 &nbsp; Salad Bar &amp; Smoked Turkey Breast</span></span><span class="price">13.99</span></li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h2 class="menu-section-title">Desserts</h2>
+                            <p class="menu-section-note">Made In-House Daily!</p>
+                            <ul class="menu-items">
+                                <li><span><span class="name">Peach Cobbler</span><span class="desc">&amp; ice cream</span></span><span class="price">5.99</span></li>
+                                <li><span><span class="name">Banana Pudding</span></span><span class="price">5.99</span></li>
+                                <li><span><span class="name">Cherry Cobbler</span><span class="desc">&amp; ice cream</span></span><span class="price">5.99</span></li>
+                                <li><span><span class="name">Homemade Brownies</span></span><span class="price">2.75</span></li>
+                                <li><span><span class="name">Pecan Cobbler</span><span class="desc">&amp; ice cream</span></span><span class="price">6.99</span></li>
+                                <li><span><span class="name">Cookie Brownie Bar</span></span><span class="price">2.99</span></li>
+                                <li><span><span class="name">Chocolate Chip Cookie</span></span><span class="price">1.75</span></li>
+                            </ul>
+
+                            <div class="double-rule"></div>
+
+                            <h2 class="menu-section-title">Daily Specials</h2>
+                            <ul class="menu-items dotted-box">
+                                <li><span><span class="name">Monday - Chicken Fried Steak</span><span class="desc">with two sides &amp; salad bar</span></span><span class="price">17.99</span></li>
+                                <li><span><span class="name">Tuesday - All You Can Eat Ribs</span><span class="desc">with two sides</span></span><span class="price">22.99</span></li>
+                                <li><span><span class="name">Wednesday - Dozen Fried Shrimp</span><span class="desc">Jumbo fried shrimp &amp; two sides</span></span><span class="price">21.99</span></li>
+                                <li><span><span class="name">Thursday - Baby Back Ribs</span><span class="desc">1/2 rack &amp; your choice of 2 sides</span></span><span class="price">18.99</span></li>
+                                <li><span><span class="name">Friday - Ribeye Specials</span><span class="desc">with two sides, salad bar &amp; dinner roll<br>(10oz) 19.99 &nbsp; (16oz) 26.99</span></span></li>
+                                <li><span><span class="name">Saturday - All You Can Eat Ribs</span><span class="desc">with two sides</span></span><span class="price">22.99</span></li>
+                                <li><span><span class="name">Sunday - Chicken Fried Pork Chop</span><span class="desc">Boneless pork chop, two sides &amp; salad bar</span></span><span class="price">17.99</span></li>
+                            </ul>
+                        </section>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="diagonal-stripes py-20 px-4 text-gray-300 relative overflow-hidden">
+        
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center relative z-10">
+            
+            <!-- Location Info -->
+            <div class="reveal card-hover glass rounded-2xl p-6 text-center md:text-left">
+                <div class="flex items-center justify-center md:justify-start gap-2 mb-4">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-red-500"></i>
+                    <h3 class="text-white font-bold text-sm uppercase">Visit Us</h3>
+                </div>
+                <p class="text-sm font-bold text-red-400 mb-2">Red River BBQ & Grill</p>
+                <p class="text-sm hover:text-white transition-colors cursor-pointer">
+                    <i data-lucide="phone" class="w-3 h-3 inline mr-1"></i> 281.332.8086
+                </p>
+                <p class="text-sm italic mt-2 text-gray-400">1911 E. Main St.</p>
+                <p class="text-sm italic text-gray-400">League City, TX 77573</p>
+                <div class="mt-4 pt-4 border-t border-white/10">
+                    <h4 class="text-white font-bold text-xs uppercase mb-2">Hours:</h4>
+                    <p class="text-xs"><span class="text-yellow-400">Sun-Thu:</span> 11am-9pm</p>
+                    <p class="text-xs"><span class="text-yellow-400">Fri-Sat:</span> 11am-9:30pm</p>
+                </div>
+                <a href="https://www.facebook.com/profile.php?id=100063717936123" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-full text-white text-xs transition-all hover:scale-105">
+                    <i data-lucide="facebook" class="w-4 h-4"></i> Follow Us
+                </a>
+            </div>
+
+            <!-- Rewards Box (Center) -->
+            <div class="reveal glass rounded-2xl p-8 flex flex-col items-center justify-center text-center space-y-4 gradient-border card-hover">
+                <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-full flex items-center justify-center mb-2 shadow-lg">
+                    <i data-lucide="gift" class="w-8 h-8 text-white"></i>
+                </div>
+                <h3 class="text-white font-oswald text-2xl uppercase font-bold">Rewards Program</h3>
+                <p class="text-sm text-gray-300">Earn points, unlock rewards, get a birthday bonus!</p>
+                <a href="https://www.toasttab.com/red-river-bbq-league-city-1911-e-main-st-suite-b/rewardsSignup" target="_blank" rel="noopener noreferrer" class="btn-outline-modern px-6 py-3 text-sm font-bold uppercase tracking-widest rounded-lg flex items-center gap-2 relative z-10">
+                    <i data-lucide="star" class="w-4 h-4"></i> Join Now
+                </a>
+            </div>
+
+            <!-- Google Map -->
+            <div class="reveal glass rounded-2xl overflow-hidden shadow-2xl">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.1234567!2d-95.4849!3d29.5429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640d5f5f5f5f5f5%3A0x1234567890!2s1911%20E%20Main%20St%2C%20League%20City%2C%20TX%2077573!5e0!3m2!1sen!2sus!4v1643567890123" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!-- Bottom Logos Section -->
+        <div class="reveal mt-20 flex justify-center items-center border-t border-white/10 pt-16">
+            <div class="flex flex-wrap md:flex-nowrap justify-center md:justify-between items-end gap-8 md:gap-12 w-full max-w-6xl">
+                <!-- Red River BBQ League City -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <a href="index.html" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(220,38,38,0.5)]">
+                        <img src="images/RRBBQBrand.png" alt="Red River BBQ & Grill - League City" class="h-24 md:h-28 w-auto" />
+                    </a>
+                    <p class="text-xs text-white mt-2 uppercase tracking-wide">League City TX</p>
+                </div>
+
+                <!-- Brand League City TX -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(0,167,157,0.6)]">
+                        <img src="images/brand.png" alt="Location - League City TX" class="h-24 md:h-28 w-auto" />
+                    </div>
+                    <p class="text-xs text-white mt-2 uppercase tracking-wide">League City TX</p>
+                </div>
+
+                <!-- Brand Richmond TX -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <a href="#" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(0,167,157,0.6)]">
+                        <img src="images/brand.png" alt="Location - Richmond TX" class="h-24 md:h-28 w-auto" />
+                    </a>
+                    <p class="text-xs text-white mt-2 uppercase tracking-wide">Richmond TX</p>
+                </div>
+
+                <!-- BBQ Burger Upscale Katy TX -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <a href="javascript:void(0)" onclick="window.location.href=(location.hostname.includes('github.io')?'/Red-River-BBQ-mono-repo/':'/')+'katy/'" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(220,38,38,0.5)]"><img src="images/BBQ BURGER UPSCALE trans.png" alt="BBQ Burger Upscale - Katy TX" class="h-24 md:h-28 w-auto" />
+                    </a>
+                    <p class="text-xs text-white mt-2 uppercase tracking-wide">Katy TX</p>
+                </div>
+
+                <!-- Kiersh Co -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <a href="https://kiershcateringevents.com/" target="_blank" rel="noopener noreferrer" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(255,255,255,0.6)]">
+                        <img src="images/kiersh co white trans.png" alt="Kiersh Catering" class="h-24 md:h-28 w-auto opacity-100 brightness-125" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social & Links -->
+        <div class="reveal mt-12 flex flex-wrap justify-center gap-4">
+            <a href="#" class="glass px-4 py-2 rounded-full text-sm hover:bg-white/20 transition-all flex items-center gap-2">
+                <i data-lucide="briefcase" class="w-4 h-4"></i> Careers
+            </a>
+            <a href="catering.html" class="glass px-4 py-2 rounded-full text-sm hover:bg-white/20 transition-all flex items-center gap-2">
+                <i data-lucide="utensils" class="w-4 h-4"></i> Catering
+            </a>
+            <a href="community.html" class="bg-gray-800/50 px-4 py-2 rounded-full text-sm hover:bg-gray-700 transition-all flex items-center gap-2">
+                <i data-lucide="heart" class="w-4 h-4"></i> Community
+            </a>
+            <a href="reviews.html" class="glass px-4 py-2 rounded-full text-sm hover:bg-white/20 transition-all flex items-center gap-2">
+                <i data-lucide="star" class="w-4 h-4"></i> ­ Customer Reviews
+            </a>
+            <a href="https://www.toasttab.com/red-river-bbq-league-city-1911-e-main-st-suite-b/marketing-signup" target="_blank" rel="noopener noreferrer" class="glass px-4 py-2 rounded-full text-sm hover:bg-white/20 transition-all flex items-center gap-2">
+                <i data-lucide="mail" class="w-4 h-4"></i> E-Club
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-12 text-center text-xs text-white uppercase tracking-widest">
+            &copy; 2026 Red River BBQ & Grill. All Rights Reserved.
+            <p class="mt-2 text-white normal-case tracking-normal">Made with <span class="text-red-500">♥</span> in Texas | <a href="https://rivastrategies.com" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-400 transition-colors">Riva Strategies</a></p>
+        </div>
+    </footer>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-black/50 z-40" onclick="closeOrderModal()"></div>
+        
+        <!-- Modal Content -->
+        <div class="bg-white rounded-lg shadow-2xl max-w-md w-full z-50 animate-scale-in">
+            <!-- Header -->
+            <div class="bg-[#cc0000] px-6 py-4 flex justify-between items-center rounded-t-lg">
+                <h2 class="text-white font-oswald font-bold text-2xl uppercase">
+                    ORDER ONLINE
+                </h2>
+                <button onclick="closeOrderModal()" class="text-white hover:bg-[#880000] p-1 rounded transition-colors">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6">
+                <div class="space-y-3">
+                    <a href="https://order.redriverrestaurants.com/order/red-river-bbq-league-city-1911-e-main-st-suite-b" class="block w-full px-4 py-3 border-b-2 border-gray-300 text-[#cc0000] font-oswald font-bold uppercase text-center hover:bg-red-50 transition-colors" target="_blank" rel="nofollow noopener noreferrer">
+                        PICK-UP
+                    </a>
+                    <a href="https://order.online/store/red-river-bbq-grill-league-city-72318?hideModal=true&amp;pickup=true" class="block w-full px-4 py-3 text-[#cc0000] font-oswald font-bold uppercase text-center hover:bg-red-50 transition-colors" target="_blank" rel="nofollow noopener noreferrer">
+                        DELIVERY
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+
+        // ===== Order Modal Functions =====
+        function openOrderModal() {
+            document.getElementById('orderModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => lucide.createIcons(), 50);
+        }
+
+        function closeOrderModal() {
+            document.getElementById('orderModal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeOrderModal();
+            }
+        });
+
+        // ===== Scroll Reveal Animation =====
+        const revealOnScroll = () => {
+            const revealElements = document.querySelectorAll('.reveal');
+            const windowHeight = window.innerHeight;
+            const revealPoint = 100;
+            
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                
+                if (elementTop < windowHeight - revealPoint) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+
+        // ===== Mobile Menu Toggle =====
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const body = document.body;
+
+        const openMobileMenu = () => {
+            body.classList.add('mobile-menu-active');
+            mobileMenuBtn.classList.add('menu-open');
+            lucide.createIcons();
+        };
+
+        const closeMobileMenu = () => {
+            body.classList.remove('mobile-menu-active');
+            mobileMenuBtn.classList.remove('menu-open');
+        };
+
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        mobileMenuClose.addEventListener('click', closeMobileMenu);
+        mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && body.classList.contains('mobile-menu-active')) {
+                closeMobileMenu();
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768 && body.classList.contains('mobile-menu-active')) {
+                closeMobileMenu();
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(revealOnScroll, 100);
+        });
+    </script>
+    <!-- Sticky Order Online Button -->
+    <div class="fixed bottom-6 right-6 z-50 group">
+        <button onclick="openOrderModal()" class="btn-modern animate-pulse-glow text-white font-oswald font-bold uppercase tracking-wider px-6 py-3 rounded-full text-sm">Order Online</button>
+    </div>
+</body>
+</html>
+
+
+
