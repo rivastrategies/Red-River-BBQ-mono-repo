@@ -5,18 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red River BBQ - Choose Your Location | Authentic Texas Bar-B-Que Since 2002</title>
     <meta name="description" content="Red River BBQ serves authentic Texas BBQ in League City and Katy, TX. Choose your location for dining, takeout, and catering services.">
-    <link rel="canonical" href="https://redriverbbq.com/">
+    <link rel="canonical" href="https://redriverbbq.com/locations/">
     
-    <!-- Schema.org Markup -->
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content="Red River BBQ - Choose Your Location">
+    <meta property="og:description" content="Award-winning Texas BBQ with two locations: League City (4.4★, 3,645 reviews) and Katy (4.3★, 1,719 reviews). Slow-smoked brisket, ribs & more.">
+    <meta property="og:url" content="https://redriverbbq.com/locations/">
+    <meta property="og:image" content="https://redriverbbq.com/league-city/images/RRBBQBrand.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Red River BBQ">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Red River BBQ - Two Texas Locations">
+    <meta name="twitter:description" content="Authentic Texas BBQ in League City & Katy. Dine-in, takeout & catering available.">
+    <meta name="twitter:image" content="https://redriverbbq.com/league-city/images/RRBBQBrand.png">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="keywords" content="BBQ Texas, Texas BBQ, Red River BBQ, League City BBQ, Katy BBQ, brisket, ribs, smoked meats, BBQ catering">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Red River BBQ">
+    
+    <!-- Comprehensive Schema.org Markup for SEO -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Red River BBQ",
-        "url": "https://redriverbbq.com/",
-        "description": "Red River BBQ serves authentic Texas bar-b-que since 2002. Family-friendly dining with smoked meats, homestyle sides, and full catering services.",
-        "foundingDate": "2002",
-        "foundingLocation": {"@type": "Place", "name": "League City, TX"}
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://redriverbbq.com/#organization",
+                "name": "Red River BBQ",
+                "url": "https://redriverbbq.com/",
+                "logo": "https://redriverbbq.com/league-city/images/RRBBQBrand.png",
+                "description": "Red River BBQ serves authentic Texas bar-b-que since 2002. Family-friendly dining with smoked meats, homestyle sides, and full catering services at two Texas locations.",
+                "foundingDate": "2002",
+                "foundingLocation": {"@type": "Place", "name": "League City, TX"},
+                "sameAs": [
+                    "https://www.facebook.com/profile.php?id=100063717936123",
+                    "https://www.facebook.com/profile.php?id=100053556979042"
+                ],
+                "numberOfEmployees": {"@type": "QuantitativeValue", "minValue": 25, "maxValue": 50}
+            },
+            {
+                "@type": "Restaurant",
+                "@id": "https://redriverbbq.com/league-city/#restaurant",
+                "name": "Red River BBQ & Grill",
+                "url": "https://redriverbbq.com/league-city/",
+                "telephone": "+12813328086",
+                "description": "Original location serving authentic Texas BBQ in League City since 2002.",
+                "image": "https://redriverbbq.com/league-city/images/RRBBQBrand.png",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "1911 E. Main St., Suite B",
+                    "addressLocality": "League City",
+                    "addressRegion": "TX",
+                    "postalCode": "77573",
+                    "addressCountry": "US"
+                },
+                "geo": {"@type": "GeoCoordinates", "latitude": 29.4952, "longitude": -95.0863},
+                "openingHoursSpecification": [
+                    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "11:00", "closes": "21:00"},
+                    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "11:00", "closes": "21:30"}
+                ],
+                "servesCuisine": ["BBQ", "Barbecue", "Texas BBQ", "American"],
+                "priceRange": "$$",
+                "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "3645"},
+                "parentOrganization": {"@id": "https://redriverbbq.com/#organization"}
+            },
+            {
+                "@type": "Restaurant",
+                "@id": "https://redriverbbq.com/katy/#restaurant",
+                "name": "Red River BBQ & Burger",
+                "url": "https://redriverbbq.com/katy/",
+                "telephone": "+12815783800",
+                "description": "Katy location serving authentic Texas BBQ and signature burgers.",
+                "image": "https://redriverbbq.com/katy/images/BBQ BURGER UPSCALE trans.png",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "1711 S Mason Rd",
+                    "addressLocality": "Katy",
+                    "addressRegion": "TX",
+                    "postalCode": "77450",
+                    "addressCountry": "US"
+                },
+                "geo": {"@type": "GeoCoordinates", "latitude": 29.7858, "longitude": -95.8245},
+                "openingHoursSpecification": [
+                    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "11:00", "closes": "21:00"},
+                    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "11:00", "closes": "21:30"}
+                ],
+                "servesCuisine": ["BBQ", "Barbecue", "Texas BBQ", "American", "Burgers"],
+                "priceRange": "$$",
+                "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.3", "reviewCount": "1719"},
+                "parentOrganization": {"@id": "https://redriverbbq.com/#organization"}
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://redriverbbq.com/locations/#webpage",
+                "url": "https://redriverbbq.com/locations/",
+                "name": "Red River BBQ Locations - League City & Katy, TX",
+                "description": "Find your nearest Red River BBQ location. Two Texas locations serving authentic slow-smoked BBQ.",
+                "isPartOf": {"@id": "https://redriverbbq.com/#website"},
+                "about": {"@id": "https://redriverbbq.com/#organization"}
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://redriverbbq.com/locations/#breadcrumb",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://redriverbbq.com/"},
+                    {"@type": "ListItem", "position": 2, "name": "Locations", "item": "https://redriverbbq.com/locations/"}
+                ]
+            }
+        ]
     }
     </script>
     
