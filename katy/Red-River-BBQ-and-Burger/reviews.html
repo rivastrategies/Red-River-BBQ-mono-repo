@@ -749,8 +749,20 @@
     <main class="flex-grow">
 
     <!-- HERO SECTION -->
-    <section class="relative w-full h-[300px] md:h-[620px] overflow-hidden">
-        <img src="images/DRIVETHROUGH-OPEN.jpg" alt="Red River BBQ & Burger Reviews" class="w-full h-full object-cover object-left" />
+    <section class="relative w-full" id="hero">
+        <!-- Mobile: Screenshot Image (staff in kitchen) -->
+        <img 
+            src="images/Screenshot 2026-02-22 220656.png" 
+            alt="Red River BBQ & Burger Team" 
+            class="md:hidden w-full h-auto"
+        />
+        
+        <!-- Desktop: Drive-Thru Image -->
+        <img 
+            src="images/DRIVETHROUGH-OPEN.jpg" 
+            alt="Red River BBQ & Burger Reviews" 
+            class="hidden md:block w-full h-[620px] object-cover object-left"
+        />
     </section>
 
     <!-- HIGHLIGHTS SECTION -->
