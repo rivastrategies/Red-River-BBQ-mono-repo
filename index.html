@@ -2,10 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="league-city/images/RRBBQBrand.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red River BBQ - Choose Your Location | Authentic Texas Bar-B-Que Since 2002</title>
     <meta name="description" content="Red River BBQ serves authentic Texas BBQ in League City and Katy, TX. Choose your location for dining, takeout, and catering services.">
     <link rel="canonical" href="https://redriverbbq.com/">
+    
+    <!-- Resource Hints for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://www.transparenttextures.com">
+    
+    <!-- Preload critical above-the-fold images for LCP -->
+    <link rel="preload" as="image" href="league-city/images/RRBBQBrand.png" fetchpriority="high">
+    <link rel="preload" as="image" href="katy/images/BBQ BURGER UPSCALE trans.png" fetchpriority="high">
     
     <!-- Open Graph Tags for Social Sharing -->
     <meta property="og:title" content="Red River BBQ - Choose Your Location">
@@ -301,6 +313,8 @@
                             src="league-city/images/RRBBQBrand.png" 
                             alt="Red River BBQ & Grill" 
                             class="h-16 md:h-28 w-auto transition-transform duration-300 group-hover:scale-105 drop-shadow-lg"
+                            fetchpriority="high"
+                            decoding="async"
                         />
                     </a>
                     <a href="katy/" class="group cursor-pointer">
@@ -308,6 +322,8 @@
                             src="katy/images/BBQ BURGER UPSCALE trans.png" 
                             alt="Red River BBQ & Burger" 
                             class="h-16 md:h-28 w-auto transition-transform duration-300 group-hover:scale-105 drop-shadow-lg"
+                            fetchpriority="high"
+                            decoding="async"
                         />
                     </a>
                 </div>
@@ -342,6 +358,8 @@
                                     src="league-city/images/RRBBQBrand.png" 
                                     alt="Red River BBQ & Grill" 
                                     class="h-32 md:h-40 w-auto drop-shadow-lg"
+                                    fetchpriority="high"
+                                    decoding="async"
                                 />
                             </div>
                             
@@ -378,6 +396,8 @@
                                     src="katy/images/BBQ BURGER UPSCALE trans.png" 
                                     alt="Red River BBQ & Burger" 
                                     class="h-32 md:h-40 w-auto drop-shadow-lg"
+                                    fetchpriority="high"
+                                    decoding="async"
                                 />
                             </div>
                             
@@ -432,7 +452,7 @@
                 <!-- Red River BBQ League City -->
                 <div class="flex flex-col items-center group cursor-pointer">
                     <a href="league-city/" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(220,38,38,0.5)]">
-                        <img src="league-city/images/RRBBQBrand.png" alt="Red River BBQ & Grill - League City" class="h-24 md:h-28 w-auto" />
+                        <img src="league-city/images/RRBBQBrand.png" alt="Red River BBQ & Grill - League City" class="h-24 md:h-28 w-auto" loading="lazy" decoding="async" />
                     </a>
                     <p class="text-xs text-white mt-2 uppercase tracking-wide font-bold">League City TX</p>
                 </div>
@@ -440,7 +460,7 @@
                 <!-- Brand League City TX -->
                 <div class="flex flex-col items-center group cursor-pointer">
                     <div class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(0,167,157,0.6)]">
-                        <img src="league-city/images/brand.png" alt="Location - League City TX" class="h-24 md:h-28 w-auto" />
+                        <img src="league-city/images/brand.png" alt="Location - League City TX" class="h-24 md:h-28 w-auto" loading="lazy" decoding="async" />
                     </div>
                     <p class="text-xs text-white mt-2 uppercase tracking-wide font-bold">League City TX</p>
                 </div>
@@ -448,7 +468,7 @@
                 <!-- Brand Richmond TX -->
                 <div class="flex flex-col items-center group">
                     <div class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(0,167,157,0.6)]">
-                        <img src="league-city/images/brand.png" alt="Location - Richmond TX" class="h-24 md:h-28 w-auto" />
+                        <img src="league-city/images/brand.png" alt="Location - Richmond TX" class="h-24 md:h-28 w-auto" loading="lazy" decoding="async" />
                     </div>
                     <p class="text-xs text-white mt-2 uppercase tracking-wide font-bold">Richmond TX</p>
                     <p class="text-xs text-gray-400 italic">Coming Soon</p>
@@ -457,7 +477,7 @@
                 <!-- BBQ Burger Upscale Katy TX -->
                 <div class="flex flex-col items-center group cursor-pointer">
                     <a href="katy/" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(220,38,38,0.5)]">
-                        <img src="katy/images/BBQ BURGER UPSCALE trans.png" alt="BBQ Burger Upscale - Katy TX" class="h-24 md:h-28 w-auto" />
+                        <img src="katy/images/BBQ BURGER UPSCALE trans.png" alt="BBQ Burger Upscale - Katy TX" class="h-24 md:h-28 w-auto" loading="lazy" decoding="async" />
                     </a>
                     <p class="text-xs text-white mt-2 uppercase tracking-wide font-bold">Katy TX</p>
                 </div>
@@ -465,7 +485,7 @@
                 <!-- Kiersh Co -->
                 <div class="flex flex-col items-center group cursor-pointer">
                     <a href="https://kiershcateringevents.com/" target="_blank" rel="noopener noreferrer" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(255,255,255,0.6)]">
-                        <img src="katy/images/kiersh co white trans.png" alt="Kiersh Catering" class="h-24 md:h-28 w-auto opacity-100 brightness-125" />
+                        <img src="katy/images/kiersh co white trans.png" alt="Kiersh Catering" class="h-24 md:h-28 w-auto opacity-100 brightness-125" loading="lazy" decoding="async" />
                     </a>
                 </div>
             </div>
@@ -478,10 +498,22 @@
         </div>
     </footer>
 
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Lucide Icons - deferred for better LCP -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
     <script>
-        lucide.createIcons();
+        // Wait for DOM and deferred scripts to load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Lucide icons after script loads
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+        // Fallback for deferred script timing
+        window.addEventListener('load', function() {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
 
         // ===== Scroll Reveal Animation =====
         const revealOnScroll = () => {
@@ -504,6 +536,17 @@
         document.addEventListener('DOMContentLoaded', () => {
             setTimeout(revealOnScroll, 100);
         });
+    </script>
+
+    <!-- Service Worker Registration for caching and offline support -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('[SW] Registered:', reg.scope))
+                    .catch(err => console.log('[SW] Registration failed:', err));
+            });
+        }
     </script>
 
 </body>
