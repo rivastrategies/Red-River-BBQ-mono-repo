@@ -819,9 +819,20 @@
                         submitButton.textContent = 'Submitting...';
                     }
 
+                    // Generate unique email subject
+                    const formData = new FormData(spiritDaysForm);
+                    const orgName = formData.get('orgName') || '';
+                    const eventDate = formData.get('eventDate') || '';
+                    const timestamp = new Date().toISOString();
+                    const subjectParts = ['Red River BBQ Spirit Days Application'];
+                    if (orgName) subjectParts.push(orgName);
+                    if (eventDate) subjectParts.push(eventDate);
+                    subjectParts.push(timestamp);
+                    formData.set('_subject', subjectParts.join(' - '));
+
                     const response = await fetch(spiritDaysForm.action, {
                         method: 'POST',
-                        body: new FormData(spiritDaysForm),
+                        body: formData,
                         headers: {
                             'Accept': 'application/json'
                         }

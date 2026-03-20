@@ -1476,9 +1476,31 @@
                         submitButton.textContent = 'Submitting...';
                     }
 
+                    // Convert 24h time to 12h format before submission
+                    const formData = new FormData(cateringForm);
+                    const timeValue = formData.get('eventTime');
+                    if (timeValue) {
+                        const [hours, minutes] = timeValue.split(':');
+                        const hour = parseInt(hours, 10);
+                        const ampm = hour >= 12 ? 'PM' : 'AM';
+                        const hour12 = hour % 12 || 12;
+                        formData.set('eventTime', hour12 + ':' + minutes + ' ' + ampm);
+                    }
+
+                    // Generate unique email subject
+                    const firstName = formData.get('firstName') || '';
+                    const lastName = formData.get('lastName') || '';
+                    const eventDate = formData.get('eventDate') || '';
+                    const timestamp = new Date().toISOString();
+                    const subjectParts = ['Red River BBQ Catering Inquiry'];
+                    if (firstName || lastName) subjectParts.push((firstName + ' ' + lastName).trim());
+                    if (eventDate) subjectParts.push(eventDate);
+                    subjectParts.push(timestamp);
+                    formData.set('_subject', subjectParts.join(' - '));
+
                     const response = await fetch(cateringForm.action, {
                         method: 'POST',
-                        body: new FormData(cateringForm),
+                        body: formData,
                         headers: {
                             'Accept': 'application/json'
                         }

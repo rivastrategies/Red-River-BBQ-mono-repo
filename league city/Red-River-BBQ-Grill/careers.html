@@ -1575,9 +1575,19 @@
                         submitButton.textContent = 'Submitting...';
                     }
 
+                    // Generate unique email subject
+                    const formData = new FormData(careerForm);
+                    const firstName = formData.get('firstName') || '';
+                    const lastName = formData.get('lastName') || '';
+                    const timestamp = new Date().toISOString();
+                    const subjectParts = ['Red River BBQ Career Application'];
+                    if (firstName || lastName) subjectParts.push((firstName + ' ' + lastName).trim());
+                    subjectParts.push(timestamp);
+                    formData.set('_subject', subjectParts.join(' - '));
+
                     const response = await fetch(careerForm.action, {
                         method: 'POST',
-                        body: new FormData(careerForm),
+                        body: formData,
                         headers: {
                             'Accept': 'application/json'
                         }
