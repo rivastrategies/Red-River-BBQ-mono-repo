@@ -740,7 +740,7 @@
 
     <main class="flex-grow">
         <!-- HERO SECTION -->
-        <section class="relative w-full" id="hero">
+        <section class="relative w-full overflow-hidden" id="hero">
             <!-- Mobile: Screenshot Image -->
             <img 
                 src="images/Screenshot 2026-02-22 220656.png" 
@@ -756,6 +756,11 @@
                 class="hero-image hidden md:block w-full h-auto"
                 id="hero-image-desktop"
             />
+            <div class="absolute inset-0 flex items-end justify-center pb-12">
+                <button onclick="openOrderModal()" class="btn-modern px-8 py-4 text-white font-oswald font-bold uppercase tracking-wider rounded-lg animate-pulse-glow text-lg">
+                    Pickup &amp; Delivery
+                </button>
+            </div>
         </section>
 
         <!-- ABOUT SECTION -->
