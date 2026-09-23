@@ -3,7 +3,7 @@
  * Provides client-side caching, offline support, and faster repeat visits
  */
 
-const CACHE_NAME = "redriverbbq-v1";
+const CACHE_NAME = "redriverbbq-v2";
 
 // Critical assets to cache immediately on install
 const PRECACHE_ASSETS = [
@@ -12,7 +12,7 @@ const PRECACHE_ASSETS = [
   "/league-city/images/RRBBQBrand.png",
   "/katy/images/BBQ%20BURGER%20UPSCALE%20trans.png",
   "/league-city/images/brand.png",
-  "/katy/images/kiersh%20co%20white%20trans.png"
+  "/katy/images/kiersh-co-optimized.webp"
 ];
 
 // Install event - precache critical assets

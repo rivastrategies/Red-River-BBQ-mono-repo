@@ -125,7 +125,7 @@
                 </button>
                 <nav class="hidden md:flex flex-col items-end">
                     <ul class="flex gap-x-6 text-white font-oswald font-bold uppercase text-base tracking-wide">
-                        <li><a href="locations/" class="nav-link hover:text-yellow-400 transition-all duration-300">LOCATIONS & MENUS</a></li>
+                        <li><a href="/" class="nav-link hover:text-yellow-400 transition-all duration-300">LOCATIONS & MENUS</a></li>
                         <li><a href="/katy/catering/" class="nav-link hover:text-yellow-400 transition-all duration-300">CATERING</a></li>
                         <li><a href="#" class="nav-link hover:text-yellow-400 transition-all duration-300">PARTY ROOM</a></li>
                         <li><a href="/katy/careers/" class="nav-link hover:text-yellow-400 transition-all duration-300">CAREERS</a></li>
@@ -146,13 +146,13 @@
     <div id="mobile-menu" class="fixed top-0 right-0 h-full w-[280px] bg-white z-[70] transform translate-x-full transition-transform duration-300 ease-out shadow-2xl overflow-y-auto flex flex-col">
         <div class="flex items-center justify-between p-4 border-b border-gray-200">
             <span class="text-black font-oswald font-bold text-lg uppercase">Menu</span>
-            <button id="mobile-menu-close" class="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-200 hover:bg-red-600 hover:text-white transition-colors">
+            <button type="button" id="mobile-menu-close" aria-label="Close menu" class="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-200 hover:bg-red-600 hover:text-white transition-colors">
                 <i data-lucide="x" class="w-6 h-6 text-black"></i>
             </button>
         </div>
         <nav class="p-4">
             <ul class="space-y-1">
-                <li><a href="locations/" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all"><i data-lucide="map-pin" class="w-5 h-5 text-red-500"></i> Locations & Menus</a></li>
+                <li><a href="/" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all"><i data-lucide="map-pin" class="w-5 h-5 text-red-500"></i> Locations & Menus</a></li>
                 <li><a href="/katy/catering/" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all"><i data-lucide="utensils" class="w-5 h-5 text-red-500"></i> Catering</a></li>
                 <li><a href="#" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all"><i data-lucide="party-popper" class="w-5 h-5 text-red-500"></i> Party Room</a></li>
                 <li><a href="/katy/careers/" class="flex items-center gap-3 px-4 py-3 text-black font-oswald font-bold uppercase tracking-wide rounded-lg hover:bg-gray-100 transition-all"><i data-lucide="briefcase" class="w-5 h-5 text-red-500"></i> Careers</a></li>
@@ -281,7 +281,7 @@
             <div class="flex flex-wrap md:flex-nowrap justify-center md:justify-between items-end gap-8 md:gap-12 w-full max-w-6xl">
                 <!-- Red River BBQ League City -->
                 <div class="flex flex-col items-center group cursor-pointer">
-                    <a href="javascript:void(0)" onclick="window.location.href=(location.hostname.includes('github.io')?'/Red-River-BBQ-mono-repo/':'/')+'league-city/'" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(220,38,38,0.5)]">
+                    <a href="/league-city/" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(220,38,38,0.5)]">
                         <img src="/katy/images/RRBBQBrand.png" alt="Red River BBQ & Burger - League City" class="h-24 md:h-28 w-auto" />
                     </a>
                     <p class="text-xs text-gray-200 mt-2 uppercase tracking-wide">League City TX</p>
@@ -311,7 +311,7 @@
                 <!-- Kiersh Co -->
                 <div class="flex flex-col items-center group cursor-pointer">
                     <a href="https://kiershcateringevents.com/" target="_blank" rel="noopener noreferrer" class="transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(255,255,255,0.6)]">
-                        <img src="/katy/images/kiersh co white trans.png" alt="Kiersh Catering" class="h-24 md:h-28 w-auto opacity-100 brightness-125" />
+                        <img src="/katy/images/kiersh-co-optimized.webp" alt="Kiersh Catering" class="h-24 md:h-28 w-auto opacity-100 brightness-125" />
                     </a>
                 </div>
             </div>
