@@ -138,3 +138,22 @@
     trackFormError: function (type, provider) { trackEvent('form_error', { form_type: type, provider: provider || 'website' }); }
   };
 })();
+
+/* Metricool website analytics */
+(function () {
+  'use strict';
+  if (!(window.location.hostname === "redriverbbq.com" || window.location.hostname === "www.redriverbbq.com")) return;
+  var path = window.location.pathname.toLowerCase().replace(/\/+$/, '');
+  var hash = "";
+  if (path === '/katy' || path.indexOf('/katy/') === 0) hash = 'e81ee56b98ed91f5706de8dfe7c12e9e';
+  if (path === '/league-city' || path.indexOf('/league-city/') === 0) hash = 'd0caed994a84d2078905b234b80096c8';
+  if (!hash || window.__rivaMetricoolLoaded) return;
+  window.__rivaMetricoolLoaded = true;
+  var script = document.createElement('script');
+  script.src = 'https://tracker.metricool.com/resources/be.js';
+  script.async = true;
+  script.onload = function () {
+    if (window.beTracker) window.beTracker.t({ hash: hash });
+  };
+  document.head.appendChild(script);
+})();
